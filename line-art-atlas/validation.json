@@ -1,0 +1,12 @@
+{
+  "method_count": 225,
+  "svg_count": 225,
+  "atlas_pages": 63,
+  "all_methods_present_in_pdf": true,
+  "all_svg_files_rendered": true,
+  "all_original_findings_present_in_pdf": true,
+  "svg_text_bounds_checked": 225,
+  "text_out_of_bounds": [],
+  "gray_code_cycle_single_bit_changes": true,
+  "source_unchanged": true
+}

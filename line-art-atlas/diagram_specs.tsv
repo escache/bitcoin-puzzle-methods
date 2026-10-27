@@ -1,0 +1,225 @@
+M001	derive	private scalar	public point	address hash
+M002	scan	interval start	check each value	interval end
+M003	sample	fixed seed	sampled positions	target check
+M004	shards	whole interval	one draw per shard	spread coverage
+M005	partition	integer bounds	adjoining shards	no gaps
+M006	permutation	shard offsets	coprime stride	visit once
+M007	formats	stored samples	compressed / full	two hash checks
+M008	endpoints	lower boundary	unsearched interior	upper boundary
+M009	stream	generate	verify now	discard or retain
+M010	permutation	full offset ring	odd stride	complete cycle
+M011	pointwalk	current point	add delta times G	next point
+M012	checkpoint	walk position	save state	resume and cross-check
+M013	priority	whole interval	forecast band first	then complement
+M014	branches	root / coefficient	remainder choices	candidate intervals
+M015	benchmark	same candidates	scalar vs point walk	compare time
+M016	distributed	coordinator	worker pull queues	checker nodes
+M017	formats	32-byte scalar	public-key encodings	20-byte hash
+M018	holdout	synthetic fixture	separate real corpus	validate pipeline
+M019	bitvote	training bit rows	column majority	later-key check
+M020	sequence	normalized positions	five-index gaps	compare transitions
+M021	parse	binary dump	field boundaries	point and distance
+M022	collision	tame walk	shared curve point	wild walk
+M023	walk	bounded interval	deterministic jumps	distinguished points
+M024	table	tame phase	saved point table	wild lookup
+M025	certificate	point and bounds	solver manifest	external solver
+M026	shift	public point Q	subtract base times G	D1 target point
+M027	branches	base hypotheses	shifted targets	shared herd work
+M028	bsgs	baby steps	matching table	giant steps
+M029	weighted	interval strata	prior masses	weighted walk effort
+M030	weighted	candidate slots	prior weights	GPU hop budgets
+M031	parallel	native walk loop	compiled herd steps	same search rule
+M032	benchmark	identical scalar	binding / reference	same curve result
+M033	parallel	device work groups	parallel walk lanes	implementation required
+M034	cost	measured throughput	operation budget	time and cost
+M035	distributed	job manifest	remote shards	collected checkpoints
+M036	certificate	declared bounds	target / provenance	result verification
+M037	widen	first search band	miss then enlarge	remaining complement
+M038	cube	original scalar	cube + layer	residual
+M039	tower	scalar	root hierarchy	five levels
+M040	clip	root bounds	feasible coefficients	reconstruct in range
+M041	branches	R2 and C2	Delta2 sweep	possible R1 values
+M042	probe	guessed Delta2	shift target point	short D1 probe
+M043	clip	leaf D1 range	puzzle bounds	intersection
+M044	band	normalized D1	calibration band	prioritized values
+M045	priority	D1 domain	ratio band first	then all other values
+M046	tower	remainder	root / quotient	nested residual
+M047	containment	full slot list	known answer	inside or outside
+M048	cost	slot widths	square-root work	sum over slots
+M049	prune	digit choices	constraint gates	feasible leaves
+M050	lattice	root candidates	gamma / tolerance bands	feasible intersection
+M051	widen	minimal tier	narrow / focus tiers	full lattice tier
+M052	anchor	metadata anchor	centered neighborhood	clipped slots
+M053	glv	full scalar	balanced split	endomorphism sum
+M054	glv	D1 remainder	GLV coordinates	modular reconstruction
+M055	atlas	scalar coordinates	typed hierarchy	exact relationships
+M056	regression	global and local fits	blend forecasts	R2 estimate
+M057	sequence	known roots	five-index steps	extrapolated root
+M058	bucket	training Delta2 share	new R2 bucket	proposed Delta2
+M059	holdout	leave one key out	fit full slots	reveal and score
+M060	benchmark	past-only fit	midpoint baseline	equal-width comparison
+M061	null	uniform scalars	same ninth-root map	matched null
+M062	null	synthetic corpora	refit whole pipeline	forward-score null
+M063	gridmax	forecast grid	select best statistic	selected null comparison
+M064	selection	candidate slices	best observed slice	repeat selection in null
+M065	oracle	true roots supplied	predict remainder	measure residual error
+M066	oracle	oracle digits	blind hypotheses	separate hunt outcomes
+M067	train	training buckets	freeze two-bin window	later keys
+M068	roots	square / cube / ninth	normalized buckets	same window rule
+M069	train	past keys only	refit before target	walk forward
+M070	feedback	search planner	measure outcomes	update parameters
+M071	band	R2 root band	map bucket boundaries	conditional scalar range
+M072	anchor	root bucket	floor / midpoint / ceiling	concrete candidates
+M073	donor	donor bucket	carry raw offset	target bucket
+M074	cross	all donor offsets	all legal roots	candidate cross-product
+M075	donor	donor fraction	rescale bucket share	target offset
+M076	regression	bucket shares	polynomial in index	predicted share
+M077	surface	index and root	polynomial surface	bucket-share estimate
+M078	interpolate	known neighbor	interpolate position	known neighbor
+M079	interpolate	root neighbors	linear / geometric	missing root
+M080	interpolate	neighbor key values	log-key / raw offset	gap estimate
+M081	near	observed near miss	distance statistic	chance comparison
+M082	null	all donor carries	nearest distance	matched carry null
+M083	roots	nth-root ladder	finite anchors	address checks
+M084	triangle	known sequence	exact differences	candidate continuation
+M085	certificate	frozen families	77 unknown targets	bounded checks
+M086	branches	known neighbors	finite continuations	puzzle 140 candidates
+M087	prng	state x	multiply + increment	modular next state
+M088	lfsr	observed bits	feedback taps	reconstructed register
+M089	tower	mod 2 candidates	lift one bit level	compatible recurrences
+M090	factor	consecutive values	difference factors	compare repeated factors
+M091	hashchain	starting value	repeated hash	next digest
+M092	derive	seed and index	hash / HMAC	candidate output
+M093	prng	Python MT seed	word stream	puzzle-width mask
+M094	bits	unmasked candidates	prefix / suffix overlap	shared-value test
+M095	derive	wallet seed	BIP32 child	puzzle mask
+M096	derive	wallet state	Electrum / Armory	masked candidates
+M097	branches	HD parent	child and index choices	interval pairing
+M098	tree	supplied extended key	declared child paths	derived candidates
+M099	bits	seed constraints	prefix and full width	allowed candidates
+M100	cluster	key / CLI records	shared fingerprints	candidate clusters
+M101	bitvote	aligned bit rows	popcount / column rates	compare distributions
+M102	pointwalk	public points	counter / small offsets	test linear relations
+M103	peel	sparse scalar	remove high terms	residual tail
+M104	peel	previous key tail	grow or peel bits	nested candidate
+M105	bits	fixed tail	shift both coordinates	candidate family
+M106	bitgrid	bit choices	learning grid	bounded candidates
+M107	mask	seed and tail	XOR / delta masks	candidate checks
+M108	gray	anchor bits	one bit changes	Gray-code walk
+M109	hamming	anchor key	Hamming shells	breadth-first neighbors
+M110	mask	TRAILING / D1 anchor	flip selected bits	candidate neighborhood
+M111	mask	dual masks	Gray bit placement	byte / bit candidates
+M112	bitgrid	fixed popcount	Gosper next pattern	byte-lane variants
+M113	hamming	shifted anchor	suffix bit shells	bounded hunts
+M114	orbit	seed state	declared transformations	reachable orbit
+M115	bitgrid	used byte values	unseen-byte score	candidate ranking
+M116	weighted	keyspace shards	HP-RTE weights	distributed samples
+M117	mask	two-byte state	rotate bytes	claimed four-hex tree
+M118	stream	sample generator	JSON / JSONL records	million-record output
+M119	diameter	modular samples	weighted distance	diversity score
+M120	converge	finite sample sequence	pairwise closeness	convergence claim check
+M121	diameter	ordinary point set	farthest pair	exact diameter
+M122	cantor	starting interval	remove middle thirds	finite-stage set
+M123	cantor	Cantor-like encoding	proposed correspondence	finite keyspace
+M124	ap	byte values	equal-step triples	avoid progressions
+M125	ap	byte positions	monochromatic triples	position checks
+M126	ap	subsets	double progressions	declared Ramsey tests
+M127	gate	pattern label	test exact definition	eligible or ineligible
+M128	waves	classical inputs	Q1 through Q9 formulas	numeric outputs
+M129	bitgrid	bit positions	periodic / CFSG labels	classification scheme
+M130	distributed	BPK-TSP jobs	many process lanes	architecture proposal
+M131	nonce	Block-1 signature	manual nonce hypothesis	binding equation check
+M132	nonce	puzzle-160 signature	nonce / signing-key relation	public-point checks
+M133	signatures	two artifact signatures	proposed linear relation	compatibility test
+M134	reusednonce	two signatures	same nonce / matching r	algebraic key recovery
+M135	signatures	nonce pair	affine relation	linear-system recovery
+M136	signatures	counter nonces	small offset choices	relation checks
+M137	leak	partial nonce bits	bounded error lattice	candidate validation
+M138	leak	structured nonce model	additional leakage needed	recovery hypothesis
+M139	benchmark	ECDSA equations	Schnorr equations	scheme compatibility
+M140	graph	early outputs	spending signatures	collect records
+M141	graph	seed transactions	descendant traversal	expand signature corpus
+M142	graph	old / whale sweeps	transaction graph	extract signatures
+M143	gate	per-public-key corpus	nonce-data sufficiency	lattice eligibility
+M144	scan	witness / testnet data	target-r comparison	matching records
+M145	derive	message / fork spend	signature verification	revealed public point
+M146	collision	parsed DP distances	signed walk equation	candidate scalar check
+M147	fork	candidate x value	two possible y lifts	compressed public keys
+M148	bits	metadata integer	low bits / slices	interval anchor
+M149	cluster	leading-zero points	pairwise point offsets	relation tests
+M150	graph	hashed artifacts	named evidence edges	traceable relation bundle
+M151	graph	early blocks	outputs and spends	puzzle-linked graph
+M152	fanout	puzzle-135 spend	forward / reverse edges	related destinations
+M153	fanout	funding inputs	0.99-BTC outputs	neighboring cluster
+M154	parse	transaction payloads	relay / OP_RETURN	decoded clues
+M155	parse	spent block numbers	encoding choices	candidate clues
+M156	graph	hub addresses	spends and outputs	recoverability evidence
+M157	graph	puzzle labels	reflection / unlock links	relation hypotheses
+M158	archive	archive queries	historical pages	challenge artifacts
+M159	tree	supplied phrase	passphrase / path choices	bounded derivations
+M160	parse	complete chat records	speaker and source tags	indexed candidate leads
+M161	prng	32-bit seed	MT19937 entropy	derived scalar
+M162	derive	weak entropy	BIP39 and HD paths	address types
+M163	prng	Profanity seed	MT19937-64 words	packed base scalar
+M164	pointwalk	weak base point	add G repeatedly	incremental candidates
+M165	prng	48-bit Java state	LCG updates	nextBytes stream
+M166	prng	low-entropy seed	SUN SHA1PRNG state	deterministic bytes
+M167	lfsr	glibc state words	add feedback taps	truncated output bytes
+M168	prng	Lehmer state	times 16807 mod p	byte stream
+M169	prng	Lehmer state	times 48271 mod p	byte stream
+M170	clock	millis / sensor seed	AVR rand replay	key bytes
+M171	prng	PHP seed	modern MT / range rule	byte-fill calls
+M172	prng	PHP seed	legacy twist rule	distinct byte stream
+M173	bits	first-byte constraint	wallet-specific calls	key byte string
+M174	coupled	two V8 states	multiply-with-carry	combined outputs
+M175	leak	observed random outputs	xorshift constraints	compatible states
+M176	prng	TickCount-style seed	.NET subtractive state	replayed outputs
+M177	clock	timestamp / UUID	encode and hash	full-width output
+M178	clock	bounded 2009 times	generator families	coinbase comparison
+M179	parallel	seed ranges	GPU PRNG / curve lanes	address-index checks
+M180	bloom	candidate hash	Bloom rejection	exact sorted lookup
+M181	archive	wallet repositories	RNG call sites	version / dataflow triage
+M182	certificate	proposed scanner hit	rederive exact path	address-type audit
+M183	residue	scalar digits	reduce modulo nine	index association
+M184	stego	private scalar bits	public x bits	XOR / low-bit relation
+M185	fibonacci	integer value	nonadjacent Fibonacci terms	sparse representation
+M186	sample	normalized positions	Halton-like spacing	discrepancy control
+M187	benford	root leading digits	observed counts	Benford reference
+M188	cubes	cube a	cube b	sum candidate
+M189	regression	puzzle indices	polynomial fit	later scalar estimate
+M190	venn	set bits of key A	intersection / union	set bits of key B
+M191	endpoints	power-of-two bounds	normalized edge margins	key position
+M192	residue	small moduli	residue histograms	bias tests
+M193	collatz	starting scalar	parity-dependent steps	stopping-time summary
+M194	derive	phrase catalog	derive and mask	declared schedule
+M195	clock	solve-date numbers	encoding / fitting	scalar-position test
+M196	division	integer value	quotient and remainder	exact reconstruction
+M197	null	observed residues	matched random samples	distribution control
+M198	collision	hashed walk states	birthday collisions	jump-table probes
+M199	regression	data subsets	SVD / interval rounding	forecast bounds
+M200	gate	curve / field parameters	embedding-degree conditions	MOV applicability
+M201	cost	preprocessing work	memory / online work	amortized tradeoff
+M202	triangle	finite residue row	neighbor subtraction	shrinking triangle
+M203	orbit	cyclic difference row	wraparound subtraction	finite-state cycle
+M204	quotient	signed difference row	remove common powers	primitive next row
+M205	tower	starting rows	repeat quotient operator	256 levels
+M206	growth	all signed values	track every level	magnitude growth
+M207	inverse	shared difference row	many possible originals	anchor selects one
+M208	bits	seed and index	byte / bit updates	deterministic evolution
+M209	coupled	paired states	mask / rotation coupling	next paired states
+M210	feedback	first / second differences	drift summaries	choose next operation
+M211	waves	bit trajectories	entropy / cycles / spectra	random controls
+M212	atlas	scalar	point / serialization	address coordinates
+M213	bsgs	small modular powers	matching table	large exponent steps
+M214	orbit	multiply modulo N	Brent checkpoints	return period
+M215	collision	exponent walk A	matching modular value	exponent walk B
+M216	orbit	modular iterations	cycle-related pair	gcd factor test
+M217	benchmark	same modulus and base	Python / GMP / Rust	order and time checks
+M218	feedback	trial outcomes	estimate success rate	adapt repetition budget
+M219	feedback	backend reward streams	UCB / EWMA policy	explore or stop
+M220	circuit	puzzle-derived semiprime	order / gcd pipeline	resource analogy
+M221	gate	declared problem size	exact-small / model-large	modeled success
+M222	resource	logical components	data + workspace + ancilla	assumption sensitivity
+M223	resource	logical operations	code-distance overhead	physical time / qubits
+M224	sensitivity	baseline assumptions	change mask / parameters	compare estimates
+M225	holdout	policy training stream	freeze trial budget	held-out streams

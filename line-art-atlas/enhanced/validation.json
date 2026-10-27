@@ -1,0 +1,27 @@
+{
+  "methods": 225,
+  "svg_files": 225,
+  "png_files": 225,
+  "atlas_pages": 227,
+  "themes": 14,
+  "all_source_narratives_and_findings_retained": true,
+  "all_plates_rendered": true,
+  "png_size": [
+    2400,
+    3000
+  ],
+  "raster_exports_checked": 225,
+  "svg_hashes_checked": 225,
+  "inset_clipping_families_checked": 14,
+  "all_pdf_pages_vector": true,
+  "preview_size": [
+    5400,
+    7080
+  ],
+  "detail_image_size": [
+    3600,
+    4500
+  ],
+  "archive_integrity_verified": true,
+  "source_unchanged": true
+}

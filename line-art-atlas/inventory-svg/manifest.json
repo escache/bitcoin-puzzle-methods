@@ -1,0 +1,3278 @@
+{
+  "count": 244,
+  "kind_counts": {
+    "derive": 8,
+    "scan": 2,
+    "sample": 2,
+    "shards": 1,
+    "partition": 1,
+    "permutation": 2,
+    "formats": 2,
+    "endpoints": 2,
+    "stream": 2,
+    "pointwalk": 3,
+    "checkpoint": 1,
+    "priority": 2,
+    "branches": 5,
+    "benchmark": 6,
+    "distributed": 3,
+    "holdout": 4,
+    "bitvote": 2,
+    "sequence": 3,
+    "parse": 4,
+    "collision": 4,
+    "walk": 1,
+    "table": 2,
+    "certificate": 4,
+    "shift": 1,
+    "bsgs": 2,
+    "weighted": 3,
+    "parallel": 3,
+    "cost": 3,
+    "widen": 2,
+    "cube": 1,
+    "tower": 4,
+    "clip": 2,
+    "probe": 1,
+    "band": 2,
+    "containment": 1,
+    "prune": 1,
+    "lattice": 1,
+    "anchor": 2,
+    "glv": 3,
+    "atlas": 2,
+    "regression": 5,
+    "bucket": 1,
+    "null": 5,
+    "gridmax": 2,
+    "selection": 1,
+    "oracle": 2,
+    "train": 2,
+    "roots": 2,
+    "feedback": 4,
+    "donor": 2,
+    "cross": 2,
+    "surface": 1,
+    "interpolate": 3,
+    "near": 1,
+    "triangle": 2,
+    "prng": 12,
+    "lfsr": 3,
+    "factor": 1,
+    "hashchain": 2,
+    "bits": 6,
+    "tree": 2,
+    "cluster": 2,
+    "bitgrid": 5,
+    "coupled": 3,
+    "bloom": 2,
+    "clock": 5,
+    "graph": 8,
+    "mask": 5,
+    "peel": 2,
+    "gray": 1,
+    "hamming": 2,
+    "orbit": 4,
+    "diameter": 2,
+    "converge": 1,
+    "cantor": 2,
+    "ap": 3,
+    "gate": 4,
+    "waves": 2,
+    "nonce": 2,
+    "signatures": 3,
+    "reusednonce": 1,
+    "leak": 3,
+    "fork": 1,
+    "fanout": 2,
+    "archive": 2,
+    "residue": 2,
+    "stego": 1,
+    "fibonacci": 1,
+    "benford": 1,
+    "cubes": 1,
+    "venn": 1,
+    "collatz": 1,
+    "division": 1,
+    "quotient": 1,
+    "growth": 1,
+    "inverse": 1,
+    "circuit": 1,
+    "resource": 2,
+    "sensitivity": 1
+  },
+  "methods": [
+    {
+      "id": "M001",
+      "method": "Public puzzle corpus verification",
+      "kind": "derive",
+      "stages": [
+        "private scalar",
+        "public point",
+        "address hash"
+      ],
+      "svg_file": "inventory-svg/M001.svg",
+      "sha256": "368a39d7880cacd362596fe13e7bf47502c42b285e157945dcab2c747f54a778",
+      "legacy": true
+    },
+    {
+      "id": "M002",
+      "method": "Small-range exhaustive address search",
+      "kind": "scan",
+      "stages": [
+        "interval start",
+        "check each value",
+        "interval end"
+      ],
+      "svg_file": "inventory-svg/M002.svg",
+      "sha256": "05378ef1a32a778ea2e47f236f86ef43c5e660d8483c3bb4646662a955d0d967",
+      "legacy": true
+    },
+    {
+      "id": "M003",
+      "method": "Full-range seeded sampling backtests",
+      "kind": "sample",
+      "stages": [
+        "fixed seed",
+        "sampled positions",
+        "target check"
+      ],
+      "svg_file": "inventory-svg/M003.svg",
+      "sha256": "a53dcca1b4e5d2eeda806f6d8f83aa1c5418f86cb966c7e6c50d1f65acd55dbd",
+      "legacy": true
+    },
+    {
+      "id": "M004",
+      "method": "Uniform within-shard representatives",
+      "kind": "shards",
+      "stages": [
+        "whole interval",
+        "one draw per shard",
+        "spread coverage"
+      ],
+      "svg_file": "inventory-svg/M004.svg",
+      "sha256": "79c7893f3ffcce67cc398a9534698bd1919f9d71c6ad9819cd56f593204d6960",
+      "legacy": true
+    },
+    {
+      "id": "M005",
+      "method": "Exact integer partition coverage",
+      "kind": "partition",
+      "stages": [
+        "integer bounds",
+        "adjoining shards",
+        "no gaps"
+      ],
+      "svg_file": "inventory-svg/M005.svg",
+      "sha256": "8eeb02021032c246ba4dbbab1982455baf862031ad0528b4fc63c834bb97312d",
+      "legacy": true
+    },
+    {
+      "id": "M006",
+      "method": "No-repeat affine shard permutations",
+      "kind": "permutation",
+      "stages": [
+        "shard offsets",
+        "coprime stride",
+        "visit once"
+      ],
+      "svg_file": "inventory-svg/M006.svg",
+      "sha256": "2a47493814ae480def3dd93d90d7f6fec783df17afff35ac754ce65c4288b699",
+      "legacy": true
+    },
+    {
+      "id": "M007",
+      "method": "One-million sample-key verification",
+      "kind": "formats",
+      "stages": [
+        "stored samples",
+        "compressed / full",
+        "two hash checks"
+      ],
+      "svg_file": "inventory-svg/M007.svg",
+      "sha256": "ee302664c38c5fa7d01a3e0083cb049a36e19abaed0ed2804550005471bda6c4",
+      "legacy": true
+    },
+    {
+      "id": "M008",
+      "method": "Range-start and range-end verification",
+      "kind": "endpoints",
+      "stages": [
+        "lower boundary",
+        "unsearched interior",
+        "upper boundary"
+      ],
+      "svg_file": "inventory-svg/M008.svg",
+      "sha256": "2d1f4c88cfb7ef079021d6048475bd34a2a623bc662d8c887cfd727f0d8ebf0e",
+      "legacy": true
+    },
+    {
+      "id": "M009",
+      "method": "Generate-and-verify streaming batches",
+      "kind": "stream",
+      "stages": [
+        "generate",
+        "verify now",
+        "discard or retain"
+      ],
+      "svg_file": "inventory-svg/M009.svg",
+      "sha256": "89656470d73d1b892a38dc021f610c3de9c80b9bf7a1b872a5531b027673b595",
+      "legacy": true
+    },
+    {
+      "id": "M010",
+      "method": "Continuous affine full-support search",
+      "kind": "permutation",
+      "stages": [
+        "full offset ring",
+        "odd stride",
+        "complete cycle"
+      ],
+      "svg_file": "inventory-svg/M010.svg",
+      "sha256": "907e6211a77491fbe1e96f8135c1fccf2159ab7055423502e5cf13f6dc1e628a",
+      "legacy": true
+    },
+    {
+      "id": "M011",
+      "method": "Incremental public-point verification",
+      "kind": "pointwalk",
+      "stages": [
+        "current point",
+        "add delta times G",
+        "next point"
+      ],
+      "svg_file": "inventory-svg/M011.svg",
+      "sha256": "de32ba3e08eab484969e145f2a8b2981b3332ad48ad547e54cfbb0b76dbe3c7f",
+      "legacy": true
+    },
+    {
+      "id": "M012",
+      "method": "Checkpoint resume and scalar cross-checks",
+      "kind": "checkpoint",
+      "stages": [
+        "walk position",
+        "save state",
+        "resume and cross-check"
+      ],
+      "svg_file": "inventory-svg/M012.svg",
+      "sha256": "c421a2dc1ae62e0140c8197d81e9861303ec344fe7100ec9e7b321ab20313819",
+      "legacy": true
+    },
+    {
+      "id": "M013",
+      "method": "FUSED priority-band traversal with fallback",
+      "kind": "priority",
+      "stages": [
+        "whole interval",
+        "forecast band first",
+        "then complement"
+      ],
+      "svg_file": "inventory-svg/M013.svg",
+      "sha256": "c619f04523ff1c6bb07aba9c16345217f25c81a6f3970db037e8cbc1d01ea700",
+      "legacy": true
+    },
+    {
+      "id": "M014",
+      "method": "Advanced selective FUSED/Delta2 adapter",
+      "kind": "branches",
+      "stages": [
+        "root / coefficient",
+        "remainder choices",
+        "candidate intervals"
+      ],
+      "svg_file": "inventory-svg/M014.svg",
+      "sha256": "cd66128b7c3d33d35d84a725f4041f81f3a5781330f35614a21f1dbefcf578a8",
+      "legacy": true
+    },
+    {
+      "id": "M015",
+      "method": "CPU scalar versus point-walk benchmarking",
+      "kind": "benchmark",
+      "stages": [
+        "same candidates",
+        "scalar vs point walk",
+        "compare time"
+      ],
+      "svg_file": "inventory-svg/M015.svg",
+      "sha256": "2da7afa34b5a991eb07ea4e4466a590ab3221490e670c8b23416cbab5c46ea94",
+      "legacy": true
+    },
+    {
+      "id": "M016",
+      "method": "Mock distributed key-generation network",
+      "kind": "distributed",
+      "stages": [
+        "coordinator",
+        "worker pull queues",
+        "checker nodes"
+      ],
+      "svg_file": "inventory-svg/M016.svg",
+      "sha256": "b537904199c86bbe06d489b861e1325f55916dcb2b4654a68425bcc51321e05a",
+      "legacy": true
+    },
+    {
+      "id": "M017",
+      "method": "32-byte padding and dual-format P2PKH checks",
+      "kind": "formats",
+      "stages": [
+        "32-byte scalar",
+        "public-key encodings",
+        "20-byte hash"
+      ],
+      "svg_file": "inventory-svg/M017.svg",
+      "sha256": "8263f1092db368145ec99971608dfe15d0504749f194f3375b942348b7e8be90",
+      "legacy": true
+    },
+    {
+      "id": "M018",
+      "method": "Synthetic fixtures versus disclosed puzzle data",
+      "kind": "holdout",
+      "stages": [
+        "synthetic fixture",
+        "separate real corpus",
+        "validate pipeline"
+      ],
+      "svg_file": "inventory-svg/M018.svg",
+      "sha256": "d509e6c0a23cc704fe6fc504f4f24b03bef4c7c705c4bbc798b09be7146443f3",
+      "legacy": true
+    },
+    {
+      "id": "M019",
+      "method": "Empirical bit-vote and position forecasting",
+      "kind": "bitvote",
+      "stages": [
+        "training bit rows",
+        "column majority",
+        "later-key check"
+      ],
+      "svg_file": "inventory-svg/M019.svg",
+      "sha256": "67ada1fe293216603bbdc405af208f3611b364e2f39a34372487bfcbd608075c",
+      "legacy": true
+    },
+    {
+      "id": "M020",
+      "method": "Five-index scale/transition analysis",
+      "kind": "sequence",
+      "stages": [
+        "normalized positions",
+        "five-index gaps",
+        "compare transitions"
+      ],
+      "svg_file": "inventory-svg/M020.svg",
+      "sha256": "a18725a54b3daabfc379c3c67902f9c6ba4c4ba39e8757403ab9c3764cede5aa",
+      "legacy": true
+    },
+    {
+      "id": "M021",
+      "method": "Binary distinguished-point parsing",
+      "kind": "parse",
+      "stages": [
+        "binary dump",
+        "field boundaries",
+        "point and distance"
+      ],
+      "svg_file": "inventory-svg/M021.svg",
+      "sha256": "8082a916920276daf556cae5bf842c4c72dcec664f82cdc39c40c1976b85a76d",
+      "legacy": true
+    },
+    {
+      "id": "M022",
+      "method": "Tame/wild collision recovery",
+      "kind": "collision",
+      "stages": [
+        "tame walk",
+        "shared curve point",
+        "wild walk"
+      ],
+      "svg_file": "inventory-svg/M022.svg",
+      "sha256": "d6022539ab0a33cda974165975395ef6d87ee5a6b39ee2597cc4ed15f0441fe9",
+      "legacy": true
+    },
+    {
+      "id": "M023",
+      "method": "Single-process bounded Pollard kangaroo",
+      "kind": "walk",
+      "stages": [
+        "bounded interval",
+        "deterministic jumps",
+        "distinguished points"
+      ],
+      "svg_file": "inventory-svg/M023.svg",
+      "sha256": "d6e96bbd018b65284f6f3d81a392525cf1f977d968d345f4bb7d61939ee88af9",
+      "legacy": true
+    },
+    {
+      "id": "M024",
+      "method": "Separated tame and wild phases",
+      "kind": "table",
+      "stages": [
+        "tame phase",
+        "saved point table",
+        "wild lookup"
+      ],
+      "svg_file": "inventory-svg/M024.svg",
+      "sha256": "3c0faeb36c2a09bf544f2eaf6dfd46c03a93e79953fcfe5bf480ef8afc241f15",
+      "legacy": true
+    },
+    {
+      "id": "M025",
+      "method": "JeanLucPons / RCKangaroo export",
+      "kind": "certificate",
+      "stages": [
+        "point and bounds",
+        "solver manifest",
+        "external solver"
+      ],
+      "svg_file": "inventory-svg/M025.svg",
+      "sha256": "55e6282db725266fe9d1077d85c936d9246a4313dd745abf8a332db8269dd0bb",
+      "legacy": true
+    },
+    {
+      "id": "M026",
+      "method": "Direct D1 interval kangaroo",
+      "kind": "shift",
+      "stages": [
+        "public point Q",
+        "subtract base times G",
+        "D1 target point"
+      ],
+      "svg_file": "inventory-svg/M026.svg",
+      "sha256": "a745b178efd5e84df43f49197221d19812cd6f37d0b5fa634355804539936960",
+      "legacy": true
+    },
+    {
+      "id": "M027",
+      "method": "Wrapped CT multi-target kangaroo",
+      "kind": "branches",
+      "stages": [
+        "base hypotheses",
+        "shifted targets",
+        "shared herd work"
+      ],
+      "svg_file": "inventory-svg/M027.svg",
+      "sha256": "23ea1a4b729230b9e62999b08a0129aea15e73cec156ee2e870b16c1530adba9",
+      "legacy": true
+    },
+    {
+      "id": "M028",
+      "method": "CPU banded baby-step/giant-step D1 hunts",
+      "kind": "bsgs",
+      "stages": [
+        "baby steps",
+        "matching table",
+        "giant steps"
+      ],
+      "svg_file": "inventory-svg/M028.svg",
+      "sha256": "fc73a75a8ccf8ce79e544cf4667600542823565986b68d624577d8268102f3bd",
+      "legacy": true
+    },
+    {
+      "id": "M029",
+      "method": "Prior-weighted stratified kangaroo",
+      "kind": "weighted",
+      "stages": [
+        "interval strata",
+        "prior masses",
+        "weighted walk effort"
+      ],
+      "svg_file": "inventory-svg/M029.svg",
+      "sha256": "860e46461abb034de86fa531cf824f7ea3f514e6ae56dd8ee02fa454370c9c8e",
+      "legacy": true
+    },
+    {
+      "id": "M030",
+      "method": "Prior-weighted GPU slot budgets",
+      "kind": "weighted",
+      "stages": [
+        "candidate slots",
+        "prior weights",
+        "GPU hop budgets"
+      ],
+      "svg_file": "inventory-svg/M030.svg",
+      "sha256": "e31fb55ed8a1255714755b9cb13d94b94de1c24cc670cf516a8512e5bc6709b2",
+      "legacy": true
+    },
+    {
+      "id": "M031",
+      "method": "Rust native herd stepping",
+      "kind": "parallel",
+      "stages": [
+        "native walk loop",
+        "compiled herd steps",
+        "same search rule"
+      ],
+      "svg_file": "inventory-svg/M031.svg",
+      "sha256": "ec8b537f75ee5af448515dc21ae03627444764e2634a82faf2dde7f5b676dc8e",
+      "legacy": true
+    },
+    {
+      "id": "M032",
+      "method": "Coincurve/libsecp256k1 fast backend",
+      "kind": "benchmark",
+      "stages": [
+        "identical scalar",
+        "binding / reference",
+        "same curve result"
+      ],
+      "svg_file": "inventory-svg/M032.svg",
+      "sha256": "ed2a5c049449ca0426dabadafefcdb62a537fdfa4a6e51a2f8ff08b8818b21fa",
+      "legacy": true
+    },
+    {
+      "id": "M033",
+      "method": "GPU modular herd/D1 backends",
+      "kind": "parallel",
+      "stages": [
+        "device work groups",
+        "parallel walk lanes",
+        "implementation required"
+      ],
+      "svg_file": "inventory-svg/M033.svg",
+      "sha256": "ac071393be67b58f0ae7dcca580b72438639a9756e7e8e9cbde6bdb952aae50c",
+      "legacy": true
+    },
+    {
+      "id": "M034",
+      "method": "GPU throughput and cost calibration",
+      "kind": "cost",
+      "stages": [
+        "measured throughput",
+        "operation budget",
+        "time and cost"
+      ],
+      "svg_file": "inventory-svg/M034.svg",
+      "sha256": "afa5d5974c6bbfabe4d4e70133edd6e4e43ffc9b31f6011fddb58b3763fcab2e",
+      "legacy": true
+    },
+    {
+      "id": "M035",
+      "method": "RunPod/Vultr sharding and orchestration",
+      "kind": "distributed",
+      "stages": [
+        "job manifest",
+        "remote shards",
+        "collected checkpoints"
+      ],
+      "svg_file": "inventory-svg/M035.svg",
+      "sha256": "db5357bdf698189dfb58b5eece28fc83a8a4467e06750fc94352ff63cc0ef982",
+      "legacy": true
+    },
+    {
+      "id": "M036",
+      "method": "Bounded ECDLP certificates and slot gates",
+      "kind": "certificate",
+      "stages": [
+        "declared bounds",
+        "target / provenance",
+        "result verification"
+      ],
+      "svg_file": "inventory-svg/M036.svg",
+      "sha256": "cdcc61bfd56247f0de59c29cffe829e83d86f268100a69133f0013d3c4bc33c6",
+      "legacy": true
+    },
+    {
+      "id": "M037",
+      "method": "Miss ladder and complement widening",
+      "kind": "widen",
+      "stages": [
+        "first search band",
+        "miss then enlarge",
+        "remaining complement"
+      ],
+      "svg_file": "inventory-svg/M037.svg",
+      "sha256": "f0fac403ccae42c95e53dcac35692a817da9c45fe90f2af403e3b67ea646a2a7",
+      "legacy": true
+    },
+    {
+      "id": "M038",
+      "method": "Cubic scalar decomposition",
+      "kind": "cube",
+      "stages": [
+        "original scalar",
+        "cube + layer",
+        "residual"
+      ],
+      "svg_file": "inventory-svg/M038.svg",
+      "sha256": "8a2865defcbfe3d0fad45894c8f6dab4f49c21f98a192ecb922884fcdf69ac9f",
+      "legacy": true
+    },
+    {
+      "id": "M039",
+      "method": "Five-level R1/R2/S3/S4/S5 tower",
+      "kind": "tower",
+      "stages": [
+        "scalar",
+        "root hierarchy",
+        "five levels"
+      ],
+      "svg_file": "inventory-svg/M039.svg",
+      "sha256": "156d78280b64a28069992e9f53fe51af81cb4e236eb321d835a2b09960719330",
+      "legacy": true
+    },
+    {
+      "id": "M040",
+      "method": "Exact root bounds and coefficient feasibility",
+      "kind": "clip",
+      "stages": [
+        "root bounds",
+        "feasible coefficients",
+        "reconstruct in range"
+      ],
+      "svg_file": "inventory-svg/M040.svg",
+      "sha256": "d1c54c3efd7ce11a68ccdcefc81bcd8f0f0eabae4530f27b525e243f42f087a2",
+      "legacy": true
+    },
+    {
+      "id": "M041",
+      "method": "Phase-2 Delta2 enumeration",
+      "kind": "branches",
+      "stages": [
+        "R2 and C2",
+        "Delta2 sweep",
+        "possible R1 values"
+      ],
+      "svg_file": "inventory-svg/M041.svg",
+      "sha256": "d2cb411c13a411a8684d7f5af28ab9b68414df46eb8d910e26b9e5b0f7e7effa",
+      "legacy": true
+    },
+    {
+      "id": "M042",
+      "method": "Phase-2 public-key-guided light probes",
+      "kind": "probe",
+      "stages": [
+        "guessed Delta2",
+        "shift target point",
+        "short D1 probe"
+      ],
+      "svg_file": "inventory-svg/M042.svg",
+      "sha256": "5181ff8d64a3d8f7adc7a8ded5d59d8ca40aa3c6a0dba4b30bc4406e61e4b692",
+      "legacy": true
+    },
+    {
+      "id": "M043",
+      "method": "Puzzle-bound clipping of D1",
+      "kind": "clip",
+      "stages": [
+        "leaf D1 range",
+        "puzzle bounds",
+        "intersection"
+      ],
+      "svg_file": "inventory-svg/M043.svg",
+      "sha256": "e020df51cfb2533d00dd28829916bcfd5eae8bf6435e556aa1c4d8b609a49e65",
+      "legacy": true
+    },
+    {
+      "id": "M044",
+      "method": "D1 high-index ratio bands",
+      "kind": "band",
+      "stages": [
+        "normalized D1",
+        "calibration band",
+        "prioritized values"
+      ],
+      "svg_file": "inventory-svg/M044.svg",
+      "sha256": "fcfa7ea72e9373ea82ff5f1f751b4ab7052652afac8f73128319a8810e556dd9",
+      "legacy": true
+    },
+    {
+      "id": "M045",
+      "method": "Two-phase D1 band/complement policy",
+      "kind": "priority",
+      "stages": [
+        "D1 domain",
+        "ratio band first",
+        "then all other values"
+      ],
+      "svg_file": "inventory-svg/M045.svg",
+      "sha256": "5f5fbd0418a686caa115efeacfa794adde02ba29c2f32714c3370805076fab3a",
+      "legacy": true
+    },
+    {
+      "id": "M046",
+      "method": "Recursive remainder/sub-digit decomposition",
+      "kind": "tower",
+      "stages": [
+        "remainder",
+        "root / quotient",
+        "nested residual"
+      ],
+      "svg_file": "inventory-svg/M046.svg",
+      "sha256": "77c9c2dab2b749e16ddf778bfd8f949fda8277f57217bb4b7ab04324dcd9322b",
+      "legacy": true
+    },
+    {
+      "id": "M047",
+      "method": "All-known-key slot containment",
+      "kind": "containment",
+      "stages": [
+        "full slot list",
+        "known answer",
+        "inside or outside"
+      ],
+      "svg_file": "inventory-svg/M047.svg",
+      "sha256": "fa2ba6463f402f0e42fe527f97662d5925dda4b6255adec70dfac12c8b127b12",
+      "legacy": true
+    },
+    {
+      "id": "M048",
+      "method": "Post-slot square-root cost scaling",
+      "kind": "cost",
+      "stages": [
+        "slot widths",
+        "square-root work",
+        "sum over slots"
+      ],
+      "svg_file": "inventory-svg/M048.svg",
+      "sha256": "a61476c14325f5c820eaf2572a311db64b699a7c4f06de00ead2eee50e35139e",
+      "legacy": true
+    },
+    {
+      "id": "M049",
+      "method": "Constraint-satisfaction slot construction",
+      "kind": "prune",
+      "stages": [
+        "digit choices",
+        "constraint gates",
+        "feasible leaves"
+      ],
+      "svg_file": "inventory-svg/M049.svg",
+      "sha256": "2146f0eff8ef2271136be9dc6dc42b0cf2888e0b51cfd5be773fe8ee1265122e",
+      "legacy": true
+    },
+    {
+      "id": "M050",
+      "method": "Gamma-band and lattice narrowing presets",
+      "kind": "lattice",
+      "stages": [
+        "root candidates",
+        "gamma / tolerance bands",
+        "feasible intersection"
+      ],
+      "svg_file": "inventory-svg/M050.svg",
+      "sha256": "58e95bc057650cc0cc3bcc02ee02db2fa9854bfd98554cd351282f7ef97f74e9",
+      "legacy": true
+    },
+    {
+      "id": "M051",
+      "method": "Tiered minimal/narrow/focus/lattice exports",
+      "kind": "widen",
+      "stages": [
+        "minimal tier",
+        "narrow / focus tiers",
+        "full lattice tier"
+      ],
+      "svg_file": "inventory-svg/M051.svg",
+      "sha256": "f11d90630aace854b3eff46c957329e13b285ff4e315c4455ec71469b051d7aa",
+      "legacy": true
+    },
+    {
+      "id": "M052",
+      "method": "Anchor/TRAILING-centered slot construction",
+      "kind": "anchor",
+      "stages": [
+        "metadata anchor",
+        "centered neighborhood",
+        "clipped slots"
+      ],
+      "svg_file": "inventory-svg/M052.svg",
+      "sha256": "4c6b907f594c4e873a4149c11fd45a8f05f0aadebbd151b6576fd2a05ff624ed",
+      "legacy": true
+    },
+    {
+      "id": "M053",
+      "method": "GLV scalar decomposition and endomorphism",
+      "kind": "glv",
+      "stages": [
+        "full scalar",
+        "balanced split",
+        "endomorphism sum"
+      ],
+      "svg_file": "inventory-svg/M053.svg",
+      "sha256": "103eaffd48b47337b5a17900094624377805314f0b59683028291075c6d33b83",
+      "legacy": true
+    },
+    {
+      "id": "M054",
+      "method": "GLV splitting specifically on D1",
+      "kind": "glv",
+      "stages": [
+        "D1 remainder",
+        "GLV coordinates",
+        "modular reconstruction"
+      ],
+      "svg_file": "inventory-svg/M054.svg",
+      "sha256": "2bd8700cbb234e94f87e26f4dfc70c9d084fdb079698a6f847d42341b33dae4f",
+      "legacy": true
+    },
+    {
+      "id": "M055",
+      "method": "Exact value atlas and hierarchy visualizations",
+      "kind": "atlas",
+      "stages": [
+        "scalar coordinates",
+        "typed hierarchy",
+        "exact relationships"
+      ],
+      "svg_file": "inventory-svg/M055.svg",
+      "sha256": "3c193b9c6811925cfbf80080dc6fac6cb67137c7de4bcdfc08a2cd886060ef4f",
+      "legacy": true
+    },
+    {
+      "id": "M056",
+      "method": "FUSED global/local R2 regression",
+      "kind": "regression",
+      "stages": [
+        "global and local fits",
+        "blend forecasts",
+        "R2 estimate"
+      ],
+      "svg_file": "inventory-svg/M056.svg",
+      "sha256": "b1038687596b26fdbf655f577263204fbb7dae1d661e41175ed8abbb7ade59e3",
+      "legacy": true
+    },
+    {
+      "id": "M057",
+      "method": "Gap-five sequence extrapolation",
+      "kind": "sequence",
+      "stages": [
+        "known roots",
+        "five-index steps",
+        "extrapolated root"
+      ],
+      "svg_file": "inventory-svg/M057.svg",
+      "sha256": "d26ee7c82e07df48543bff71e37f57d82d1968d544e85c41d27b8e95f249764e",
+      "legacy": true
+    },
+    {
+      "id": "M058",
+      "method": "Strategic Delta2 ratio hints",
+      "kind": "bucket",
+      "stages": [
+        "training Delta2 share",
+        "new R2 bucket",
+        "proposed Delta2"
+      ],
+      "svg_file": "inventory-svg/M058.svg",
+      "sha256": "4f6eb120bc9814cc5b43e9c4c684c7401045070f6824998c60a37e2d4ed6b8e8",
+      "legacy": true
+    },
+    {
+      "id": "M059",
+      "method": "Leave-one-out full-slot backtest",
+      "kind": "holdout",
+      "stages": [
+        "leave one key out",
+        "fit full slots",
+        "reveal and score"
+      ],
+      "svg_file": "inventory-svg/M059.svg",
+      "sha256": "672e37ef023e7a4830afcba69e8e3ccea1a638d5cc0a4e39a2c3d9a3835a048a",
+      "legacy": true
+    },
+    {
+      "id": "M060",
+      "method": "Past-only FUSED versus midpoint",
+      "kind": "benchmark",
+      "stages": [
+        "past-only fit",
+        "midpoint baseline",
+        "equal-width comparison"
+      ],
+      "svg_file": "inventory-svg/M060.svg",
+      "sha256": "35159441f53ed8c372fbaf77e1fdda27c14d8cb9a087d633651ff1f10fc4f29e",
+      "legacy": true
+    },
+    {
+      "id": "M061",
+      "method": "Correct uniform null for ninth-root clustering",
+      "kind": "null",
+      "stages": [
+        "uniform scalars",
+        "same ninth-root map",
+        "matched null"
+      ],
+      "svg_file": "inventory-svg/M061.svg",
+      "sha256": "5cb89a74dbdf927e8a2341b971e378d0d9fdd30bd331c460ea6c0fc963c959eb",
+      "legacy": true
+    },
+    {
+      "id": "M062",
+      "method": "Forward-only synthetic-corpus null",
+      "kind": "null",
+      "stages": [
+        "synthetic corpora",
+        "refit whole pipeline",
+        "forward-score null"
+      ],
+      "svg_file": "inventory-svg/M062.svg",
+      "sha256": "5765e148b6e922da9d8af79bb9fd5f11a17f31dde6409731e7bb081d2a133a23",
+      "legacy": true
+    },
+    {
+      "id": "M063",
+      "method": "Family-wise forward R2 grid",
+      "kind": "gridmax",
+      "stages": [
+        "forecast grid",
+        "select best statistic",
+        "selected null comparison"
+      ],
+      "svg_file": "inventory-svg/M063.svg",
+      "sha256": "3a993b21250fafb301cdccfe0347ae44dbaf03ab7e16e2ce9bf51a25a1b29d98",
+      "legacy": true
+    },
+    {
+      "id": "M064",
+      "method": "Contiguous-slice selection adjustment",
+      "kind": "selection",
+      "stages": [
+        "candidate slices",
+        "best observed slice",
+        "repeat selection in null"
+      ],
+      "svg_file": "inventory-svg/M064.svg",
+      "sha256": "76cee35b8240d1ebff077f42bc310b4cb5d6da2e25bb0279eeba50fa74641624",
+      "legacy": true
+    },
+    {
+      "id": "M065",
+      "method": "Remainder precision granted true roots",
+      "kind": "oracle",
+      "stages": [
+        "true roots supplied",
+        "predict remainder",
+        "measure residual error"
+      ],
+      "svg_file": "inventory-svg/M065.svg",
+      "sha256": "c71d51eda0a48931fe99fb83cd4bd90c8e2f0365fdd2768bc3e9c79bef2af1b1",
+      "legacy": true
+    },
+    {
+      "id": "M066",
+      "method": "Oracle-versus-blind hunt comparison",
+      "kind": "oracle",
+      "stages": [
+        "oracle digits",
+        "blind hypotheses",
+        "separate hunt outcomes"
+      ],
+      "svg_file": "inventory-svg/M066.svg",
+      "sha256": "35b5065a82f9d9b3618102864bf0d9238edc744b6adb9fe087899af0b2ff3dde",
+      "legacy": true
+    },
+    {
+      "id": "M067",
+      "method": "Frozen ninth-root remainder window",
+      "kind": "train",
+      "stages": [
+        "training buckets",
+        "freeze two-bin window",
+        "later keys"
+      ],
+      "svg_file": "inventory-svg/M067.svg",
+      "sha256": "cf16c1fbae46bde661d385bc1ab08ee8a6a5927bbc20e5cf6d8463804d632a14",
+      "legacy": true
+    },
+    {
+      "id": "M068",
+      "method": "Square/cube/ninth-root window family",
+      "kind": "roots",
+      "stages": [
+        "square / cube / ninth",
+        "normalized buckets",
+        "same window rule"
+      ],
+      "svg_file": "inventory-svg/M068.svg",
+      "sha256": "8bb002b45b702e41fe2dd8d1ebcb8e4996903cdec75335efa2f0028e3a7c64a8",
+      "legacy": true
+    },
+    {
+      "id": "M069",
+      "method": "Walk-forward adaptive remainder windows",
+      "kind": "train",
+      "stages": [
+        "past keys only",
+        "refit before target",
+        "walk forward"
+      ],
+      "svg_file": "inventory-svg/M069.svg",
+      "sha256": "e8e5e5ed210efa23177f0fc6420c794f2cc907e04367669a4b2bafc23aa13373",
+      "legacy": true
+    },
+    {
+      "id": "M070",
+      "method": "Self-improving CTheory parameter loop",
+      "kind": "feedback",
+      "stages": [
+        "search planner",
+        "measure outcomes",
+        "update parameters"
+      ],
+      "svg_file": "inventory-svg/M070.svg",
+      "sha256": "83f1e44723ba0422df3e54ea649651ac7929d3601ce7835377b5ddb390d1525b",
+      "legacy": true
+    },
+    {
+      "id": "M071",
+      "method": "R2 intervals as conditional search prioritization",
+      "kind": "band",
+      "stages": [
+        "R2 root band",
+        "map bucket boundaries",
+        "conditional scalar range"
+      ],
+      "svg_file": "inventory-svg/M071.svg",
+      "sha256": "ef76d599a0f74e17419f4f34d75cf46ae0177dd995b66c5953adc15ccce79fc6",
+      "legacy": true
+    },
+    {
+      "id": "M072",
+      "method": "Root floor/midpoint/ceiling candidate anchors",
+      "kind": "anchor",
+      "stages": [
+        "root bucket",
+        "floor / midpoint / ceiling",
+        "concrete candidates"
+      ],
+      "svg_file": "inventory-svg/M072.svg",
+      "sha256": "c9e58c272168ce4f5b6772403910d9c0e255e025caa6d25dedc60b36cd40830d",
+      "legacy": true
+    },
+    {
+      "id": "M073",
+      "method": "Nearest-donor raw remainder carry",
+      "kind": "donor",
+      "stages": [
+        "donor bucket",
+        "carry raw offset",
+        "target bucket"
+      ],
+      "svg_file": "inventory-svg/M073.svg",
+      "sha256": "5766afb0a574b6da2c91713e443805f595b9bdb5365d323ee3dadb8824d153fe",
+      "legacy": true
+    },
+    {
+      "id": "M074",
+      "method": "All-donor carry over every legal ninth root",
+      "kind": "cross",
+      "stages": [
+        "all donor offsets",
+        "all legal roots",
+        "candidate cross-product"
+      ],
+      "svg_file": "inventory-svg/M074.svg",
+      "sha256": "81a171774a8a56b71f75f7fd877401e32c081f98f8508986aa0d69ea4971596c",
+      "legacy": true
+    },
+    {
+      "id": "M075",
+      "method": "Transferred within-bucket share",
+      "kind": "donor",
+      "stages": [
+        "donor fraction",
+        "rescale bucket share",
+        "target offset"
+      ],
+      "svg_file": "inventory-svg/M075.svg",
+      "sha256": "4b630505e2d82360f28be0f90a162052522f49f69d36f23f99cbac223e828ad9",
+      "legacy": true
+    },
+    {
+      "id": "M076",
+      "method": "Smooth polynomial share in puzzle index",
+      "kind": "regression",
+      "stages": [
+        "bucket shares",
+        "polynomial in index",
+        "predicted share"
+      ],
+      "svg_file": "inventory-svg/M076.svg",
+      "sha256": "969b9385639324eccfbe5f9d1f1d4586793f8d6ae07774dce464cdae45e3060e",
+      "legacy": true
+    },
+    {
+      "id": "M077",
+      "method": "Two-dimensional index/root share surface",
+      "kind": "surface",
+      "stages": [
+        "index and root",
+        "polynomial surface",
+        "bucket-share estimate"
+      ],
+      "svg_file": "inventory-svg/M077.svg",
+      "sha256": "e6ee57a84b648c75216d3e169aa0088c3c3e62725436a796b430382be5518418",
+      "legacy": true
+    },
+    {
+      "id": "M078",
+      "method": "Gap-fill normalized-position interpolation",
+      "kind": "interpolate",
+      "stages": [
+        "known neighbor",
+        "interpolate position",
+        "known neighbor"
+      ],
+      "svg_file": "inventory-svg/M078.svg",
+      "sha256": "f59f4dbe1bb3d6aa801a0d9ffda7185b2d322f1e591c419c6794214107618802",
+      "legacy": true
+    },
+    {
+      "id": "M079",
+      "method": "Gap-fill linear/geometric root interpolation",
+      "kind": "interpolate",
+      "stages": [
+        "root neighbors",
+        "linear / geometric",
+        "missing root"
+      ],
+      "svg_file": "inventory-svg/M079.svg",
+      "sha256": "9d8b10c19fb73d541c58d7c022d0f5110ffd6c5055a1bf8d7192c9e0c204f205",
+      "legacy": true
+    },
+    {
+      "id": "M080",
+      "method": "Gap-fill log-key and raw-offset interpolation",
+      "kind": "interpolate",
+      "stages": [
+        "neighbor key values",
+        "log-key / raw offset",
+        "gap estimate"
+      ],
+      "svg_file": "inventory-svg/M080.svg",
+      "sha256": "dba91b494508aff2a1ad490c0923d8afba9f1d3acf116b342e23fae239d71536",
+      "legacy": true
+    },
+    {
+      "id": "M081",
+      "method": "Near-miss anomaly testing",
+      "kind": "near",
+      "stages": [
+        "observed near miss",
+        "distance statistic",
+        "chance comparison"
+      ],
+      "svg_file": "inventory-svg/M081.svg",
+      "sha256": "d51e87a4c24392614db18934ad4932ef355af708bcb904bdb158713d94e3f0bb",
+      "legacy": true
+    },
+    {
+      "id": "M082",
+      "method": "All-donor carry proximity null",
+      "kind": "null",
+      "stages": [
+        "all donor carries",
+        "nearest distance",
+        "matched carry null"
+      ],
+      "svg_file": "inventory-svg/M082.svg",
+      "sha256": "3461134608873f2d55d27174ed3d6469d8d9f79f893b6ef2bf18b171361bca4b",
+      "legacy": true
+    },
+    {
+      "id": "M083",
+      "method": "Blind nth-root ladder address tests",
+      "kind": "roots",
+      "stages": [
+        "nth-root ladder",
+        "finite anchors",
+        "address checks"
+      ],
+      "svg_file": "inventory-svg/M083.svg",
+      "sha256": "8905ef6e0ad2a47f4ba3a3bfc71951b232ef3674f56c2725b19ec5df133277c2",
+      "legacy": true
+    },
+    {
+      "id": "M084",
+      "method": "Exact polynomial/difference continuation",
+      "kind": "triangle",
+      "stages": [
+        "known sequence",
+        "exact differences",
+        "candidate continuation"
+      ],
+      "svg_file": "inventory-svg/M084.svg",
+      "sha256": "927cfe2ad578a0f435c123e45aa3f48f8d9503034a50efee16622d269758f13b",
+      "legacy": true
+    },
+    {
+      "id": "M085",
+      "method": "Frozen candidate families on 77 unknown targets",
+      "kind": "certificate",
+      "stages": [
+        "frozen families",
+        "77 unknown targets",
+        "bounded checks"
+      ],
+      "svg_file": "inventory-svg/M085.svg",
+      "sha256": "f7efe6f208f51dcf9c6206abad9a7c02c70b8e74f1f27e8198314ecb9bbc3ad9",
+      "legacy": true
+    },
+    {
+      "id": "M086",
+      "method": "Finite continuation attempts specifically for #140",
+      "kind": "branches",
+      "stages": [
+        "known neighbors",
+        "finite continuations",
+        "puzzle 140 candidates"
+      ],
+      "svg_file": "inventory-svg/M086.svg",
+      "sha256": "1b4e99f1b4bf7f7acc58150b94413e4f8225a63a4e3635dbd301c1bcabcaa5a4",
+      "legacy": true
+    },
+    {
+      "id": "M087",
+      "method": "Fixed affine/LCG key recurrence",
+      "kind": "prng",
+      "stages": [
+        "state x",
+        "multiply + increment",
+        "modular next state"
+      ],
+      "svg_file": "inventory-svg/M087.svg",
+      "sha256": "b51071236914c93eebbf78978c926fd82ee16e5bc9a7a173b1afb82facb15eda",
+      "legacy": true
+    },
+    {
+      "id": "M088",
+      "method": "LFSR / Berlekamp-Massey reconstruction",
+      "kind": "lfsr",
+      "stages": [
+        "observed bits",
+        "feedback taps",
+        "reconstructed register"
+      ],
+      "svg_file": "inventory-svg/M088.svg",
+      "sha256": "7137d5aa775f0de9697dd6abbdff17fd9be96b2ac7c0c99ca532a20ffd511c98",
+      "legacy": true
+    },
+    {
+      "id": "M089",
+      "method": "Two-adic/Hensel polynomial recurrence",
+      "kind": "tower",
+      "stages": [
+        "mod 2 candidates",
+        "lift one bit level",
+        "compatible recurrences"
+      ],
+      "svg_file": "inventory-svg/M089.svg",
+      "sha256": "50b02ad8f8df56d836056391d1cc5e9c61c053ded5d91c9ac8f6b4242722a343",
+      "legacy": true
+    },
+    {
+      "id": "M090",
+      "method": "Consecutive-difference factor patterns",
+      "kind": "factor",
+      "stages": [
+        "consecutive values",
+        "difference factors",
+        "compare repeated factors"
+      ],
+      "svg_file": "inventory-svg/M090.svg",
+      "sha256": "32e3d755501f6e4cf9bc49572e7a530b6abf0a174eced29cc119498a70b573c0",
+      "legacy": true
+    },
+    {
+      "id": "M091",
+      "method": "Hash-chain continuation",
+      "kind": "hashchain",
+      "stages": [
+        "starting value",
+        "repeated hash",
+        "next digest"
+      ],
+      "svg_file": "inventory-svg/M091.svg",
+      "sha256": "92adb0cc60b218002ebe135977ca2b58c282b269f03c41456c454db9fc9c2402",
+      "legacy": true
+    },
+    {
+      "id": "M092",
+      "method": "Seed-plus-index hash/HMAC families",
+      "kind": "derive",
+      "stages": [
+        "seed and index",
+        "hash / HMAC",
+        "candidate output"
+      ],
+      "svg_file": "inventory-svg/M092.svg",
+      "sha256": "24fc5824751b495d6986ba1e77b5642f5fc1963391bec667769138b3a4486511",
+      "legacy": true
+    },
+    {
+      "id": "M093",
+      "method": "Python MT19937 masked-key replay",
+      "kind": "prng",
+      "stages": [
+        "Python MT seed",
+        "word stream",
+        "puzzle-width mask"
+      ],
+      "svg_file": "inventory-svg/M093.svg",
+      "sha256": "04eb033db74799a65b79b719b82c35a2d5ad5c28bb59366515efd2a6b9ab482a",
+      "legacy": true
+    },
+    {
+      "id": "M094",
+      "method": "Shared unmasked value, prefix and suffix tests",
+      "kind": "bits",
+      "stages": [
+        "unmasked candidates",
+        "prefix / suffix overlap",
+        "shared-value test"
+      ],
+      "svg_file": "inventory-svg/M094.svg",
+      "sha256": "7447ba115bae17333fe3bbc40bcc5421611421a1e1d34a784d41664c28f792fc",
+      "legacy": true
+    },
+    {
+      "id": "M095",
+      "method": "CoinVault/mSIGNA BIP32 plus mask",
+      "kind": "derive",
+      "stages": [
+        "wallet seed",
+        "BIP32 child",
+        "puzzle mask"
+      ],
+      "svg_file": "inventory-svg/M095.svg",
+      "sha256": "3b711306700ca7c2df23cbb83de95f0998b3936dc8803c5ce24c83a65adb0a8f",
+      "legacy": true
+    },
+    {
+      "id": "M096",
+      "method": "Electrum-v1 and Armory masking models",
+      "kind": "derive",
+      "stages": [
+        "wallet state",
+        "Electrum / Armory",
+        "masked candidates"
+      ],
+      "svg_file": "inventory-svg/M096.svg",
+      "sha256": "1e08af3358de7ba51e735010a0c8c4490eada805498aa898341a186054668dac",
+      "legacy": true
+    },
+    {
+      "id": "M097",
+      "method": "BIP32 child/index interval pairing",
+      "kind": "branches",
+      "stages": [
+        "HD parent",
+        "child and index choices",
+        "interval pairing"
+      ],
+      "svg_file": "inventory-svg/M097.svg",
+      "sha256": "e0ff0066e02481d2d0b0004c0449bc98afd181df0f0dd300952d6aa40409beec",
+      "legacy": true
+    },
+    {
+      "id": "M098",
+      "method": "Supplied extended-key derivation leads",
+      "kind": "tree",
+      "stages": [
+        "supplied extended key",
+        "declared child paths",
+        "derived candidates"
+      ],
+      "svg_file": "inventory-svg/M098.svg",
+      "sha256": "6d549b873aaa6c6acd765d440b9ab143b12c67ad91151b2ffa3a8ccb8427e0e0",
+      "legacy": true
+    },
+    {
+      "id": "M099",
+      "method": "Entropy-prefix and full-width constraints",
+      "kind": "bits",
+      "stages": [
+        "seed constraints",
+        "prefix and full width",
+        "allowed candidates"
+      ],
+      "svg_file": "inventory-svg/M099.svg",
+      "sha256": "d9690856327bfcad75c459140fc0316e8b6f51cf6efd6f2eff87bbfa063e7158",
+      "legacy": true
+    },
+    {
+      "id": "M100",
+      "method": "CLI fingerprint and key clustering",
+      "kind": "cluster",
+      "stages": [
+        "key / CLI records",
+        "shared fingerprints",
+        "candidate clusters"
+      ],
+      "svg_file": "inventory-svg/M100.svg",
+      "sha256": "7f7b55ceed05506cf3ca087198636123f01de22d87731a4cb4321e836a595dfa",
+      "legacy": true
+    },
+    {
+      "id": "M101",
+      "method": "Popcount and aligned-bit distribution tests",
+      "kind": "bitvote",
+      "stages": [
+        "aligned bit rows",
+        "popcount / column rates",
+        "compare distributions"
+      ],
+      "svg_file": "inventory-svg/M101.svg",
+      "sha256": "5750d0d14e1b2418bb811ce2f89d00dda1f3a7aa3568a39b3e87726522e1ede3",
+      "legacy": true
+    },
+    {
+      "id": "M102",
+      "method": "Counter/small-affine early public-key relations",
+      "kind": "pointwalk",
+      "stages": [
+        "public points",
+        "counter / small offsets",
+        "test linear relations"
+      ],
+      "svg_file": "inventory-svg/M102.svg",
+      "sha256": "e1b38d2e4aa51a0e9f18b8a92c5e2f794fb4e257ea5397395ae8051bbb158d5a",
+      "legacy": true
+    },
+    {
+      "id": "M103",
+      "method": "Firmware-accurate Coldcard Yasmarang entropy-position analysis",
+      "kind": "bitgrid",
+      "stages": [
+        "firmware register state",
+        "Yasmarang positions",
+        "affected output bytes"
+      ],
+      "svg_file": "inventory-svg/M103.svg",
+      "sha256": "11f09b0cae5f54d97962121f1c4ee2b881da9401f943c71bfbdd1d86e224065d",
+      "legacy": false
+    },
+    {
+      "id": "M104",
+      "method": "Cold-boot entropy propagation and mixer analysis",
+      "kind": "coupled",
+      "stages": [
+        "cold-boot inputs",
+        "mixer and skip paths",
+        "post-hash comparison"
+      ],
+      "svg_file": "inventory-svg/M104.svg",
+      "sha256": "5126a9245b9ee9529ba72b59ffb3fac392218d0004624782ff14c142c67b1cbb",
+      "legacy": false
+    },
+    {
+      "id": "M105",
+      "method": "Local Coldcard wallet-generation replay",
+      "kind": "derive",
+      "stages": [
+        "sanitized initial state",
+        "wallet generation replay",
+        "derived example keys"
+      ],
+      "svg_file": "inventory-svg/M105.svg",
+      "sha256": "ca72f0f05bd9fa6d6e9b226964d03cd0a70ff438c0580cc9181631ebd52d6912",
+      "legacy": false
+    },
+    {
+      "id": "M106",
+      "method": "Read-only funded-address membership analysis",
+      "kind": "bloom",
+      "stages": [
+        "funded-address list",
+        "read-only membership",
+        "exact address status"
+      ],
+      "svg_file": "inventory-svg/M106.svg",
+      "sha256": "364832ba2683f0e173ec9a41920897531cf643b45ed6a021e7057bc319ad88cc",
+      "legacy": false
+    },
+    {
+      "id": "M107",
+      "method": "Read-only residual-UTXO and drain-wave analysis",
+      "kind": "clock",
+      "stages": [
+        "dated UTXO snapshots",
+        "drain-wave sequence",
+        "remaining outputs"
+      ],
+      "svg_file": "inventory-svg/M107.svg",
+      "sha256": "4a6685e5b50c0801ff158b43e5ab58e6f9d943ee452ebf0216d591ab3aa46ed3",
+      "legacy": false
+    },
+    {
+      "id": "M108",
+      "method": "Pre-drain co-input and address-cluster analysis",
+      "kind": "graph",
+      "stages": [
+        "pre-drain inputs",
+        "co-input clustering",
+        "later sweep comparison"
+      ],
+      "svg_file": "inventory-svg/M108.svg",
+      "sha256": "2ce47873e8b3d0868680fece81ff1568d2d7a04142169f9466876c0d162e2aba",
+      "legacy": false
+    },
+    {
+      "id": "M109",
+      "method": "Bounded Coldcard entropy-grid enumeration against a funded-address dump",
+      "kind": "cross",
+      "stages": [
+        "UID / tick / skip grid",
+        "wallet path derivation",
+        "funded-dump comparison"
+      ],
+      "svg_file": "inventory-svg/M109.svg",
+      "sha256": "562d0e457d80a34d6bf5c1636c6ad74fbf08090e282b516e9fc9bc7bcc3c672a",
+      "legacy": false
+    },
+    {
+      "id": "M110",
+      "method": "Rust Coldcard address-derivation backend",
+      "kind": "hashchain",
+      "stages": [
+        "Yasmarang state",
+        "BIP-39 / BIP-32 path",
+        "address encoding"
+      ],
+      "svg_file": "inventory-svg/M110.svg",
+      "sha256": "668fdf087daccda8c855e679b32bc8cd2e772c351a2faedcc5db3bb079e169b6",
+      "legacy": false
+    },
+    {
+      "id": "M111",
+      "method": "Coldcard entropy statistical variation sweep",
+      "kind": "benchmark",
+      "stages": [
+        "register variations",
+        "65,536 output window",
+        "collision / bit statistics"
+      ],
+      "svg_file": "inventory-svg/M111.svg",
+      "sha256": "96a8644dbe10f9f02cb89f052e27a6305a6bfe6da2d3dc84730467c0e1d44298",
+      "legacy": false
+    },
+    {
+      "id": "M112",
+      "method": "All-unknown-target generator matrix",
+      "kind": "gridmax",
+      "stages": [
+        "ten generator models",
+        "unknown-target matrix",
+        "exact identity checks"
+      ],
+      "svg_file": "inventory-svg/M112.svg",
+      "sha256": "5a67a6d6ed20adaa5ee0606f8114b61a3b25923b036d260e26439b83ef58cd0f",
+      "legacy": false
+    },
+    {
+      "id": "M113",
+      "method": "Wallace LCG masked-word backtest",
+      "kind": "lfsr",
+      "stages": [
+        "LCG-compatible states",
+        "masked word packing",
+        "tier survivor count"
+      ],
+      "svg_file": "inventory-svg/M113.svg",
+      "sha256": "739d857a59a0baf53f1389c01b7534560144f850044af8319efef185bc0c395c",
+      "legacy": false
+    },
+    {
+      "id": "M114",
+      "method": "Park-Miller packed-word target checks",
+      "kind": "prng",
+      "stages": [
+        "Lehmer multipliers",
+        "word order / packing",
+        "target HASH160"
+      ],
+      "svg_file": "inventory-svg/M114.svg",
+      "sha256": "54467d089cd23c3d1a9fdf170d752baf08195da5da9ea9a0193de63a57814310",
+      "legacy": false
+    },
+    {
+      "id": "M115",
+      "method": "SplitMix64 masked-sequence target checks",
+      "kind": "mask",
+      "stages": [
+        "SplitMix64 draws",
+        "masked sequence layout",
+        "target hash check"
+      ],
+      "svg_file": "inventory-svg/M115.svg",
+      "sha256": "c21f29d195d3329c5d055c45bc838252e25dc5b4a8dbefde1a7b2afb60642ee2",
+      "legacy": false
+    },
+    {
+      "id": "M116",
+      "method": "Lagged-RNG multiword wallet-key audit",
+      "kind": "sequence",
+      "stages": [
+        "lagged state words",
+        "16 / 32 / 64-bit layouts",
+        "recurrence consistency"
+      ],
+      "svg_file": "inventory-svg/M116.svg",
+      "sha256": "4d36ef0530be8425854553b5d8008a4698ed7f93ff7ceea18a49dae612b8b0cc",
+      "legacy": false
+    },
+    {
+      "id": "M117",
+      "method": "Half-generator cross-curve coordinate analysis",
+      "kind": "glv",
+      "stages": [
+        "half-generator relation",
+        "cross-curve coordinates",
+        "DLP implication check"
+      ],
+      "svg_file": "inventory-svg/M117.svg",
+      "sha256": "37dd7f113522a50bf5f6c373d96e92ec796a77098ad77334a401dfb47d07ecc1",
+      "legacy": false
+    },
+    {
+      "id": "M118",
+      "method": "Deeper remainder/permutation-tree null calibration",
+      "kind": "null",
+      "stages": [
+        "64 declared features",
+        "3,000 matched controls",
+        "family maximum"
+      ],
+      "svg_file": "inventory-svg/M118.svg",
+      "sha256": "dce8431e579811a94372b17e8214ca4db7bbdced2bb98cf5bada62f357c63ecd",
+      "legacy": false
+    },
+    {
+      "id": "M119",
+      "method": "Low-bit affine and linear-state generator audit",
+      "kind": "regression",
+      "stages": [
+        "low-bit observations",
+        "affine / linear models",
+        "held-out rejection"
+      ],
+      "svg_file": "inventory-svg/M119.svg",
+      "sha256": "9f62a208dde3b1651461e3867b916c943fc8e7d66d11717fcaa83dbb70851269",
+      "legacy": false
+    },
+    {
+      "id": "M120",
+      "method": "Unknown-parameter inventory through Puzzle #160",
+      "kind": "table",
+      "stages": [
+        "77 unknown tiers",
+        "public constraints",
+        "unresolved coordinates"
+      ],
+      "svg_file": "inventory-svg/M120.svg",
+      "sha256": "19ff50e17808626145b064472bf2595f212509418c905eb2b080dc987eb3c913",
+      "legacy": false
+    },
+    {
+      "id": "M121",
+      "method": "Index-offset holdout and coefficient-interval audits",
+      "kind": "holdout",
+      "stages": [
+        "index-offset model",
+        "held-out tiers",
+        "coefficient bounds"
+      ],
+      "svg_file": "inventory-svg/M121.svg",
+      "sha256": "2cfc3f1028b47f8c1a4b55b23ba9e7c66ac064ea0556b0be9280199cd0c5057d",
+      "legacy": false
+    },
+    {
+      "id": "M122",
+      "method": "Sparse ORIG decomposition and peel chain",
+      "kind": "peel",
+      "stages": [
+        "sparse scalar",
+        "remove high terms",
+        "residual tail"
+      ],
+      "svg_file": "inventory-svg/M122.svg",
+      "sha256": "7fe45573ee6a512ee7f81fb6ece556daa69aaf063b80d8a847c452a06aa76d68",
+      "legacy": true
+    },
+    {
+      "id": "M123",
+      "method": "Nested previous-key tail grow/peel",
+      "kind": "peel",
+      "stages": [
+        "previous key tail",
+        "grow or peel bits",
+        "nested candidate"
+      ],
+      "svg_file": "inventory-svg/M123.svg",
+      "sha256": "e0feacfb780460df4578b3c1b7a3d12f9e34c5c7ef937c39672da1aa25e77722",
+      "legacy": true
+    },
+    {
+      "id": "M124",
+      "method": "Fixed-tail co-shift family",
+      "kind": "bits",
+      "stages": [
+        "fixed tail",
+        "shift both coordinates",
+        "candidate family"
+      ],
+      "svg_file": "inventory-svg/M124.svg",
+      "sha256": "77a0f11ef6a99ba0a9f725db508a13dc9ddde8d782b68d1c4b855a767a650bd0",
+      "legacy": true
+    },
+    {
+      "id": "M125",
+      "method": "Sparse bit-learning and dial-in grids",
+      "kind": "bitgrid",
+      "stages": [
+        "bit choices",
+        "learning grid",
+        "bounded candidates"
+      ],
+      "svg_file": "inventory-svg/M125.svg",
+      "sha256": "0fa00b001555d82742499a6365bf617e0e4711eac69b13501367061c3f3d28b2",
+      "legacy": true
+    },
+    {
+      "id": "M126",
+      "method": "Sparse XOR-tail / delta / Bloom variants",
+      "kind": "mask",
+      "stages": [
+        "seed and tail",
+        "XOR / delta masks",
+        "candidate checks"
+      ],
+      "svg_file": "inventory-svg/M126.svg",
+      "sha256": "ba20901a91bb7508ce61521d6b728f2183ec7d543da8ff0a2cf4cd4bed754064",
+      "legacy": true
+    },
+    {
+      "id": "M127",
+      "method": "Gray-code range and anchor walks",
+      "kind": "gray",
+      "stages": [
+        "anchor bits",
+        "one bit changes",
+        "Gray-code walk"
+      ],
+      "svg_file": "inventory-svg/M127.svg",
+      "sha256": "d409f04179bc8f1f8b5f29d05dd07461fc0ec39809e740f023dd1f1adba7ac0f",
+      "legacy": true
+    },
+    {
+      "id": "M128",
+      "method": "BFS Hamming balls and previous-key XOR",
+      "kind": "hamming",
+      "stages": [
+        "anchor key",
+        "Hamming shells",
+        "breadth-first neighbors"
+      ],
+      "svg_file": "inventory-svg/M128.svg",
+      "sha256": "72106c98f793c290e5c333111d310f309f80b6a84e1bf4f4694cbd169949a709",
+      "legacy": true
+    },
+    {
+      "id": "M129",
+      "method": "TRAILING-mask and FUSED-D1 bit flips",
+      "kind": "mask",
+      "stages": [
+        "TRAILING / D1 anchor",
+        "flip selected bits",
+        "candidate neighborhood"
+      ],
+      "svg_file": "inventory-svg/M129.svg",
+      "sha256": "0d5b8740d57827288c8219e5ccbc78a23ece8df7c95277fe59c320f17c4dc913",
+      "legacy": true
+    },
+    {
+      "id": "M130",
+      "method": "Dual-mask byte/bit and Gray-PDEP walks",
+      "kind": "mask",
+      "stages": [
+        "dual masks",
+        "Gray bit placement",
+        "byte / bit candidates"
+      ],
+      "svg_file": "inventory-svg/M130.svg",
+      "sha256": "f1de5d27050ed4aa0393fa8c01ab8244f2d921907752199dcf3a1b52aa2cd02b",
+      "legacy": true
+    },
+    {
+      "id": "M131",
+      "method": "Gosper constant-weight and byte-lane variants",
+      "kind": "bitgrid",
+      "stages": [
+        "fixed popcount",
+        "Gosper next pattern",
+        "byte-lane variants"
+      ],
+      "svg_file": "inventory-svg/M131.svg",
+      "sha256": "a419b5e9a34a025da4164f5f2269f4eae73efd3f5b69ac7ab77dfdbdca425042",
+      "legacy": true
+    },
+    {
+      "id": "M132",
+      "method": "Shift-shell and suffix Hamming hunts",
+      "kind": "hamming",
+      "stages": [
+        "shifted anchor",
+        "suffix bit shells",
+        "bounded hunts"
+      ],
+      "svg_file": "inventory-svg/M132.svg",
+      "sha256": "220a592ec39aa4e19d60099ab2764066d46298e66b2c43bb014ef5784161b2ed",
+      "legacy": true
+    },
+    {
+      "id": "M133",
+      "method": "Synthesis transformation orbit engine",
+      "kind": "orbit",
+      "stages": [
+        "seed state",
+        "declared transformations",
+        "reachable orbit"
+      ],
+      "svg_file": "inventory-svg/M133.svg",
+      "sha256": "3c12889c0ad0e0f62884fdfb899d2b2931639500079b26d854cd8a8c47b74d00",
+      "legacy": true
+    },
+    {
+      "id": "M134",
+      "method": "Unused-byte novelty scoring",
+      "kind": "bitgrid",
+      "stages": [
+        "used byte values",
+        "unseen-byte score",
+        "candidate ranking"
+      ],
+      "svg_file": "inventory-svg/M134.svg",
+      "sha256": "30d8278973adef6548c953c85fa92ad5949591082717c9874d2d091b81865643",
+      "legacy": true
+    },
+    {
+      "id": "M135",
+      "method": "Original HP-RTE weighted shard sampling",
+      "kind": "weighted",
+      "stages": [
+        "keyspace shards",
+        "HP-RTE weights",
+        "distributed samples"
+      ],
+      "svg_file": "inventory-svg/M135.svg",
+      "sha256": "79f631ce80332ac35608be49cf1e53482037da17ca72283cf47313b9ba1667a7",
+      "legacy": true
+    },
+    {
+      "id": "M136",
+      "method": "Two-byte rotation and four-hex-tree claims",
+      "kind": "mask",
+      "stages": [
+        "two-byte state",
+        "rotate bytes",
+        "claimed four-hex tree"
+      ],
+      "svg_file": "inventory-svg/M136.svg",
+      "sha256": "d424fcdaadf6bd128464861146ca8e46ea445a72e2d2366476425178a306a220",
+      "legacy": true
+    },
+    {
+      "id": "M137",
+      "method": "Million-record JSON/JSONL generation",
+      "kind": "stream",
+      "stages": [
+        "sample generator",
+        "JSON / JSONL records",
+        "million-record output"
+      ],
+      "svg_file": "inventory-svg/M137.svg",
+      "sha256": "f21d99880d68120774bd73d9f9059b8cfbcdeec43dc44d4d0e0b88586d0871bd",
+      "legacy": true
+    },
+    {
+      "id": "M138",
+      "method": "Weighted modular-diameter diversity",
+      "kind": "diameter",
+      "stages": [
+        "modular samples",
+        "weighted distance",
+        "diversity score"
+      ],
+      "svg_file": "inventory-svg/M138.svg",
+      "sha256": "9552d15aa5450f3bb99413d9de6d231ea65a4255812a62d9d8b5b3a2c2c661e4",
+      "legacy": true
+    },
+    {
+      "id": "M139",
+      "method": "Finite-sample Cauchy/convergence claims",
+      "kind": "converge",
+      "stages": [
+        "finite sample sequence",
+        "pairwise closeness",
+        "convergence claim check"
+      ],
+      "svg_file": "inventory-svg/M139.svg",
+      "sha256": "bf54c4e0791a94380bbf1744df77e35e839125efab581505675ec145e9ba1f7f",
+      "legacy": true
+    },
+    {
+      "id": "M140",
+      "method": "Exact ordinary diameter diagnostic",
+      "kind": "diameter",
+      "stages": [
+        "ordinary point set",
+        "farthest pair",
+        "exact diameter"
+      ],
+      "svg_file": "inventory-svg/M140.svg",
+      "sha256": "0d174ba722f99427d7942461903600108ec493c8c6de8130183acb8e9a5e1234",
+      "legacy": true
+    },
+    {
+      "id": "M141",
+      "method": "Cantor-like finite-stage constructions",
+      "kind": "cantor",
+      "stages": [
+        "starting interval",
+        "remove middle thirds",
+        "finite-stage set"
+      ],
+      "svg_file": "inventory-svg/M141.svg",
+      "sha256": "b72bcb0b3572b3fe13c0a1a15b8521c32c49bb8e60542a1eca786b396fd541f5",
+      "legacy": true
+    },
+    {
+      "id": "M142",
+      "method": "Cantor-to-keyspace homeomorphism claim",
+      "kind": "cantor",
+      "stages": [
+        "Cantor-like encoding",
+        "proposed correspondence",
+        "finite keyspace"
+      ],
+      "svg_file": "inventory-svg/M142.svg",
+      "sha256": "23fdeca0163f52eafb0e89cb060ca722332ca36d338034f6833f6525e00fe007",
+      "legacy": true
+    },
+    {
+      "id": "M143",
+      "method": "Byte-value arithmetic-progression avoidance",
+      "kind": "ap",
+      "stages": [
+        "byte values",
+        "equal-step triples",
+        "avoid progressions"
+      ],
+      "svg_file": "inventory-svg/M143.svg",
+      "sha256": "9b9cacb65ae8f872a001cc2f965828124b300e0cf68c32fa7e421f093b717c1f",
+      "legacy": true
+    },
+    {
+      "id": "M144",
+      "method": "Monochromatic byte-position progression checks",
+      "kind": "ap",
+      "stages": [
+        "byte positions",
+        "monochromatic triples",
+        "position checks"
+      ],
+      "svg_file": "inventory-svg/M144.svg",
+      "sha256": "9fc232741029ff680f0d97bdb5859733f250ac9e26837e401fb85621f726884c",
+      "legacy": true
+    },
+    {
+      "id": "M145",
+      "method": "Double-AP and RamseyScript subset claims",
+      "kind": "ap",
+      "stages": [
+        "subsets",
+        "double progressions",
+        "declared Ramsey tests"
+      ],
+      "svg_file": "inventory-svg/M145.svg",
+      "sha256": "23df9b7f9712e598743cfd31cef32b27967e4f6ca5093195a3ba7752c8a8e15f",
+      "legacy": true
+    },
+    {
+      "id": "M146",
+      "method": "Pattern-label eligibility correction",
+      "kind": "gate",
+      "stages": [
+        "pattern label",
+        "test exact definition",
+        "eligible or ineligible"
+      ],
+      "svg_file": "inventory-svg/M146.svg",
+      "sha256": "dd09bc0f0c1b322be36ff0a892bcdae357559c74fc96e97e48474bd64028f002",
+      "legacy": true
+    },
+    {
+      "id": "M147",
+      "method": "Classical hyper-phase Q1-Q9 formulas",
+      "kind": "waves",
+      "stages": [
+        "classical inputs",
+        "Q1 through Q9 formulas",
+        "numeric outputs"
+      ],
+      "svg_file": "inventory-svg/M147.svg",
+      "sha256": "d25608c5d86413a7fea486bc885204b17b5c900b6f543b903724d3614d7b3e37",
+      "legacy": true
+    },
+    {
+      "id": "M148",
+      "method": "Bit-position periodic table / CFSG labels",
+      "kind": "bitgrid",
+      "stages": [
+        "bit positions",
+        "periodic / CFSG labels",
+        "classification scheme"
+      ],
+      "svg_file": "inventory-svg/M148.svg",
+      "sha256": "a022cd16af46ec7dbb6845adb0097ad7cb51f51d9d176417b3f3763e056914e4",
+      "legacy": true
+    },
+    {
+      "id": "M149",
+      "method": "BPK-TSP and million-process architecture",
+      "kind": "distributed",
+      "stages": [
+        "BPK-TSP jobs",
+        "many process lanes",
+        "architecture proposal"
+      ],
+      "svg_file": "inventory-svg/M149.svg",
+      "sha256": "cf9db932c8892af1b687293d17aae2286b7f8944313f9463dcf80d5adb192d34",
+      "legacy": true
+    },
+    {
+      "id": "M150",
+      "method": "Aranyn Block-1 manual-nonce binding",
+      "kind": "nonce",
+      "stages": [
+        "Block-1 signature",
+        "manual nonce hypothesis",
+        "binding equation check"
+      ],
+      "svg_file": "inventory-svg/M150.svg",
+      "sha256": "781b4284a6d9221f127160dbc5b791c2f71d3d03e3a5fc8f01cf3de6ea6b50dd",
+      "legacy": true
+    },
+    {
+      "id": "M151",
+      "method": "Puzzle-160 nonce/signing-key relation",
+      "kind": "nonce",
+      "stages": [
+        "puzzle-160 signature",
+        "nonce / signing-key relation",
+        "public-point checks"
+      ],
+      "svg_file": "inventory-svg/M151.svg",
+      "sha256": "51be3fac3c42ce4ccecf68b990be0430c45497533acd1494fd6315f62f1f7767",
+      "legacy": true
+    },
+    {
+      "id": "M152",
+      "method": "Cross-signature #160 / Block-1 linear relations",
+      "kind": "signatures",
+      "stages": [
+        "two artifact signatures",
+        "proposed linear relation",
+        "compatibility test"
+      ],
+      "svg_file": "inventory-svg/M152.svg",
+      "sha256": "0723b05d6acd8ba6072f8d82c7a62558beb654e4c8ece63a42b3e9d24ef357c7",
+      "legacy": true
+    },
+    {
+      "id": "M153",
+      "method": "ECDSA nonce-reuse recovery",
+      "kind": "reusednonce",
+      "stages": [
+        "two signatures",
+        "same nonce / matching r",
+        "algebraic key recovery"
+      ],
+      "svg_file": "inventory-svg/M153.svg",
+      "sha256": "b73d1d88013bfaada1ecff7e88a6db91c5129899f48484a07427e5129fc1640f",
+      "legacy": true
+    },
+    {
+      "id": "M154",
+      "method": "Known affine-related nonce recovery",
+      "kind": "signatures",
+      "stages": [
+        "nonce pair",
+        "affine relation",
+        "linear-system recovery"
+      ],
+      "svg_file": "inventory-svg/M154.svg",
+      "sha256": "c5b79995ae405811be7b346479fb6e89e1ae67eb707a01584d07bb43d0b2b2ee",
+      "legacy": true
+    },
+    {
+      "id": "M155",
+      "method": "Counter nonces and small offset relation tests",
+      "kind": "signatures",
+      "stages": [
+        "counter nonces",
+        "small offset choices",
+        "relation checks"
+      ],
+      "svg_file": "inventory-svg/M155.svg",
+      "sha256": "b4c07c3684113f3206b6fd1d91adc0ec98626d70a21bdca47ff73a2aecb0031d",
+      "legacy": true
+    },
+    {
+      "id": "M156",
+      "method": "Hidden-number/partial-MSB nonce leakage models",
+      "kind": "leak",
+      "stages": [
+        "partial nonce bits",
+        "bounded error lattice",
+        "candidate validation"
+      ],
+      "svg_file": "inventory-svg/M156.svg",
+      "sha256": "cd1bbd0f59be47e5971bef159415c738f0f8b674d35848173a7655f37b6fb82a",
+      "legacy": true
+    },
+    {
+      "id": "M157",
+      "method": "Polynonce/half-half/side-channel possibilities",
+      "kind": "leak",
+      "stages": [
+        "structured nonce model",
+        "additional leakage needed",
+        "recovery hypothesis"
+      ],
+      "svg_file": "inventory-svg/M157.svg",
+      "sha256": "7c1b256de2589d60c09bc0e3c539bd6f5da164f5cc701e5483e285b47e8ba98b",
+      "legacy": true
+    },
+    {
+      "id": "M158",
+      "method": "ECDSA versus Schnorr/BIP340 checks",
+      "kind": "benchmark",
+      "stages": [
+        "ECDSA equations",
+        "Schnorr equations",
+        "scheme compatibility"
+      ],
+      "svg_file": "inventory-svg/M158.svg",
+      "sha256": "43301e8f686d4b46af1b5af40eed7f5e6c3f478a7bd2af9bd3d2e7a63317acc4",
+      "legacy": true
+    },
+    {
+      "id": "M159",
+      "method": "Early coinbase signature harvesting",
+      "kind": "graph",
+      "stages": [
+        "early outputs",
+        "spending signatures",
+        "collect records"
+      ],
+      "svg_file": "inventory-svg/M159.svg",
+      "sha256": "3fcaba4d6bdc11bbd392b4848228ddf3ef6d2e9f8c05aae4740d518fc7adc30e",
+      "legacy": true
+    },
+    {
+      "id": "M160",
+      "method": "Descendant/graph signature expansion",
+      "kind": "graph",
+      "stages": [
+        "seed transactions",
+        "descendant traversal",
+        "expand signature corpus"
+      ],
+      "svg_file": "inventory-svg/M160.svg",
+      "sha256": "cbe3c2ecb1bb370c08176c36024f54478920a3862decf9d6f1fc627e8bbd73e6",
+      "legacy": true
+    },
+    {
+      "id": "M161",
+      "method": "BTCparser sleeping/whale sweep signatures",
+      "kind": "graph",
+      "stages": [
+        "old / whale sweeps",
+        "transaction graph",
+        "extract signatures"
+      ],
+      "svg_file": "inventory-svg/M161.svg",
+      "sha256": "43649a9691fca0e78b35a89f09262b93084b6c1c8ce5df0863c83d0a87c89c75",
+      "legacy": true
+    },
+    {
+      "id": "M162",
+      "method": "Lattice-candidate sufficiency scan",
+      "kind": "gate",
+      "stages": [
+        "per-public-key corpus",
+        "nonce-data sufficiency",
+        "lattice eligibility"
+      ],
+      "svg_file": "inventory-svg/M162.svg",
+      "sha256": "97604ba782d07f1c1008e7973d375afc33a929c9823d2434a3e1d362d96a3fea",
+      "legacy": true
+    },
+    {
+      "id": "M163",
+      "method": "SegWit/testnet target-r scans",
+      "kind": "scan",
+      "stages": [
+        "witness / testnet data",
+        "target-r comparison",
+        "matching records"
+      ],
+      "svg_file": "inventory-svg/M163.svg",
+      "sha256": "95771433cbda72dfdd81858d850b26570a06e606f6b72abbadbd918c45fa1d88",
+      "legacy": true
+    },
+    {
+      "id": "M164",
+      "method": "Signed-message and fork public-key leaks",
+      "kind": "derive",
+      "stages": [
+        "message / fork spend",
+        "signature verification",
+        "revealed public point"
+      ],
+      "svg_file": "inventory-svg/M164.svg",
+      "sha256": "82824383c7e9dd90feb655284eebaefde350bfcf6dc2af331765d429c0b2e787",
+      "legacy": true
+    },
+    {
+      "id": "M165",
+      "method": "DP metadata distances and signed collision variants",
+      "kind": "collision",
+      "stages": [
+        "parsed DP distances",
+        "signed walk equation",
+        "candidate scalar check"
+      ],
+      "svg_file": "inventory-svg/M165.svg",
+      "sha256": "9c77713acfeb869a9f191c455fb8e6ba516bd24d48b1b2a09e25b5f07cc0e3cd",
+      "legacy": true
+    },
+    {
+      "id": "M166",
+      "method": "DP x-coordinates as candidate public keys",
+      "kind": "fork",
+      "stages": [
+        "candidate x value",
+        "two possible y lifts",
+        "compressed public keys"
+      ],
+      "svg_file": "inventory-svg/M166.svg",
+      "sha256": "223581cbc2028070798bc2e5af984d6b4022c17bf759f2dea37733ffdbf4d50a",
+      "legacy": true
+    },
+    {
+      "id": "M167",
+      "method": "TRAILING / LOW71 / bit-slice anchors",
+      "kind": "bits",
+      "stages": [
+        "metadata integer",
+        "low bits / slices",
+        "interval anchor"
+      ],
+      "svg_file": "inventory-svg/M167.svg",
+      "sha256": "164c57094546ebdeef2a90e49cc1c2fb333c94a62b771595d4125743cf75e640",
+      "legacy": true
+    },
+    {
+      "id": "M168",
+      "method": "Leading-zero public-key collection analysis",
+      "kind": "cluster",
+      "stages": [
+        "leading-zero points",
+        "pairwise point offsets",
+        "relation tests"
+      ],
+      "svg_file": "inventory-svg/M168.svg",
+      "sha256": "e1b87e7e2528ed6b1ac3e103c9ee5288b3a56164e437194f2463fe8ed7b4345f",
+      "legacy": true
+    },
+    {
+      "id": "M169",
+      "method": "Cross-artifact relation bundles",
+      "kind": "graph",
+      "stages": [
+        "hashed artifacts",
+        "named evidence edges",
+        "traceable relation bundle"
+      ],
+      "svg_file": "inventory-svg/M169.svg",
+      "sha256": "a2fbff62cb710c6fbd2a813b53db11cc11348b46c531e90eba8e262dcaad8bb6",
+      "legacy": true
+    },
+    {
+      "id": "M170",
+      "method": "Genesis/early-coinbase relationship graph",
+      "kind": "graph",
+      "stages": [
+        "early blocks",
+        "outputs and spends",
+        "puzzle-linked graph"
+      ],
+      "svg_file": "inventory-svg/M170.svg",
+      "sha256": "346a3cbc9063c32dd0410a5b969951412f349769424ac33876612f79b503b973",
+      "legacy": true
+    },
+    {
+      "id": "M171",
+      "method": "Puzzle-135 sweep/fanout tracing",
+      "kind": "fanout",
+      "stages": [
+        "puzzle-135 spend",
+        "forward / reverse edges",
+        "related destinations"
+      ],
+      "svg_file": "inventory-svg/M171.svg",
+      "sha256": "1599e37ec7e97990fd11e5142e3d011b89a54780ad3bcb8ad56b2e9a487adb92",
+      "legacy": true
+    },
+    {
+      "id": "M172",
+      "method": "0.99-BTC fanout cluster tracing",
+      "kind": "fanout",
+      "stages": [
+        "funding inputs",
+        "0.99-BTC outputs",
+        "neighboring cluster"
+      ],
+      "svg_file": "inventory-svg/M172.svg",
+      "sha256": "728ffe30d446cea2b12b756929534eddc50461f39f43a2860c25bfe5599ec6d8",
+      "legacy": true
+    },
+    {
+      "id": "M173",
+      "method": "Sender relay / OP_RETURN / extra-data clues",
+      "kind": "parse",
+      "stages": [
+        "transaction payloads",
+        "relay / OP_RETURN",
+        "decoded clues"
+      ],
+      "svg_file": "inventory-svg/M173.svg",
+      "sha256": "b46b0d36bad924372a89c3a5f11360f529ba0f01b349f8ec9f1f1af0604607fa",
+      "legacy": true
+    },
+    {
+      "id": "M174",
+      "method": "Early spent-block number encodings",
+      "kind": "parse",
+      "stages": [
+        "spent block numbers",
+        "encoding choices",
+        "candidate clues"
+      ],
+      "svg_file": "inventory-svg/M174.svg",
+      "sha256": "08b7e81badf5944bdf124c8f33222a500d5c7a42bbcef4585d13319442a91353",
+      "legacy": true
+    },
+    {
+      "id": "M175",
+      "method": "Hub-address and recoverability scans",
+      "kind": "graph",
+      "stages": [
+        "hub addresses",
+        "spends and outputs",
+        "recoverability evidence"
+      ],
+      "svg_file": "inventory-svg/M175.svg",
+      "sha256": "b9438daba8e8a264dd0e085d5ec40416406ac16f94d9637a54eff049f7a92af4",
+      "legacy": true
+    },
+    {
+      "id": "M176",
+      "method": "Puzzle reflection and unlock relationship scans",
+      "kind": "graph",
+      "stages": [
+        "puzzle labels",
+        "reflection / unlock links",
+        "relation hypotheses"
+      ],
+      "svg_file": "inventory-svg/M176.svg",
+      "sha256": "fc85534c971aa216a34182c988037eb38fecff45eed4a0ccb869959644ae7fb5",
+      "legacy": true
+    },
+    {
+      "id": "M177",
+      "method": "Historical website/archive and directory searches",
+      "kind": "archive",
+      "stages": [
+        "archive queries",
+        "historical pages",
+        "challenge artifacts"
+      ],
+      "svg_file": "inventory-svg/M177.svg",
+      "sha256": "90f364f08f8ce53996a4f336a65eae9e34fc4cf7675ef8fbcac29cce7af619e6",
+      "legacy": true
+    },
+    {
+      "id": "M178",
+      "method": "Time-Will-Tell phrase/path hypotheses",
+      "kind": "tree",
+      "stages": [
+        "supplied phrase",
+        "passphrase / path choices",
+        "bounded derivations"
+      ],
+      "svg_file": "inventory-svg/M178.svg",
+      "sha256": "9a07d41e4fecf52f1ca5dc9e604e11d1e1d87a31d618eedbab9b1390d8bd7912",
+      "legacy": true
+    },
+    {
+      "id": "M179",
+      "method": "Complete chat-lead indexing and candidate extraction",
+      "kind": "parse",
+      "stages": [
+        "complete chat records",
+        "speaker and source tags",
+        "indexed candidate leads"
+      ],
+      "svg_file": "inventory-svg/M179.svg",
+      "sha256": "fa16b5e54ba4e8a0d206c6cfbe662f5ee920bf850beaa3c51742c0e677189a70",
+      "legacy": true
+    },
+    {
+      "id": "M180",
+      "method": "Milk Sad raw MT19937 seed expansion",
+      "kind": "prng",
+      "stages": [
+        "32-bit seed",
+        "MT19937 entropy",
+        "derived scalar"
+      ],
+      "svg_file": "inventory-svg/M180.svg",
+      "sha256": "df62082bf97ddd57fcb782ba160e981e21e4e492acc5fc865ff66807f2dfc21a",
+      "legacy": true
+    },
+    {
+      "id": "M181",
+      "method": "Milk Sad BIP39/BIP44/49/84 derivations",
+      "kind": "derive",
+      "stages": [
+        "weak entropy",
+        "BIP39 and HD paths",
+        "address types"
+      ],
+      "svg_file": "inventory-svg/M181.svg",
+      "sha256": "a22bee9342f0884d5ea3e129be5e072a9b558a06df4d5fabd765fb94a9d8f7ef",
+      "legacy": true
+    },
+    {
+      "id": "M182",
+      "method": "Profanity MT19937-64 base-key replay",
+      "kind": "prng",
+      "stages": [
+        "Profanity seed",
+        "MT19937-64 words",
+        "packed base scalar"
+      ],
+      "svg_file": "inventory-svg/M182.svg",
+      "sha256": "a5d2b66ccb20a4b951b965d08d6d5f99f856ee312f5d14a9644475df801f4633",
+      "legacy": true
+    },
+    {
+      "id": "M183",
+      "method": "Profanity incremental offset grinding",
+      "kind": "pointwalk",
+      "stages": [
+        "weak base point",
+        "add G repeatedly",
+        "incremental candidates"
+      ],
+      "svg_file": "inventory-svg/M183.svg",
+      "sha256": "041725482dcf9a6c93fd722c38eb9c606566a9ce6c7ae32bd296fad811ac1353",
+      "legacy": true
+    },
+    {
+      "id": "M184",
+      "method": "Java util.Random replay",
+      "kind": "prng",
+      "stages": [
+        "48-bit Java state",
+        "LCG updates",
+        "nextBytes stream"
+      ],
+      "svg_file": "inventory-svg/M184.svg",
+      "sha256": "0ef68c18447cf0b4eb71355dd56c0b9d4ef2c438e0c88d210d93acdf7f7165b1",
+      "legacy": true
+    },
+    {
+      "id": "M185",
+      "method": "Java SUN SHA1PRNG low-entropy seed replay",
+      "kind": "prng",
+      "stages": [
+        "low-entropy seed",
+        "SUN SHA1PRNG state",
+        "deterministic bytes"
+      ],
+      "svg_file": "inventory-svg/M185.svg",
+      "sha256": "9dbb45faa2fde5617eca2311d086de9dac1b803a72c1f305b809d4f6be205961",
+      "legacy": true
+    },
+    {
+      "id": "M186",
+      "method": "glibc rand/random byte-fill replay",
+      "kind": "lfsr",
+      "stages": [
+        "glibc state words",
+        "add feedback taps",
+        "truncated output bytes"
+      ],
+      "svg_file": "inventory-svg/M186.svg",
+      "sha256": "b06b48125bd833d57482b40a6485f484adb15ae928c198a8f6307cac31c5a9d1",
+      "legacy": true
+    },
+    {
+      "id": "M187",
+      "method": "Lehmer minstd_rand0 replay",
+      "kind": "prng",
+      "stages": [
+        "Lehmer state",
+        "times 16807 mod p",
+        "byte stream"
+      ],
+      "svg_file": "inventory-svg/M187.svg",
+      "sha256": "24b359c9ca8b3aaa5c7ba85d759bbb0ccd181f4572288229c91155eebb31adb3",
+      "legacy": true
+    },
+    {
+      "id": "M188",
+      "method": "Lehmer minstd_rand replay",
+      "kind": "prng",
+      "stages": [
+        "Lehmer state",
+        "times 48271 mod p",
+        "byte stream"
+      ],
+      "svg_file": "inventory-svg/M188.svg",
+      "sha256": "1b8e4089741409c5653c0f1401ab7712da0ec55d99311ab4e62152da497a63ff",
+      "legacy": true
+    },
+    {
+      "id": "M189",
+      "method": "AVR/Arduino rand replay",
+      "kind": "clock",
+      "stages": [
+        "millis / sensor seed",
+        "AVR rand replay",
+        "key bytes"
+      ],
+      "svg_file": "inventory-svg/M189.svg",
+      "sha256": "1348e91c71118de5d6cf55a945e89f6584ecc824eda6d4e4ef7a5862825e3cea",
+      "legacy": true
+    },
+    {
+      "id": "M190",
+      "method": "Modern PHP MT19937 byte-fill replay",
+      "kind": "prng",
+      "stages": [
+        "PHP seed",
+        "modern MT / range rule",
+        "byte-fill calls"
+      ],
+      "svg_file": "inventory-svg/M190.svg",
+      "sha256": "134a7cc677cb2fbe8305d4f35b89166a60606a18f707ffe486bb000c00a5342a",
+      "legacy": true
+    },
+    {
+      "id": "M191",
+      "method": "Legacy PHP broken-twist replay",
+      "kind": "prng",
+      "stages": [
+        "PHP seed",
+        "legacy twist rule",
+        "distinct byte stream"
+      ],
+      "svg_file": "inventory-svg/M191.svg",
+      "sha256": "2ade5dfb873c74adfb6684cd571301e97c7673b3bbeb7ae64e9d66dd253c183d",
+      "legacy": true
+    },
+    {
+      "id": "M192",
+      "method": "PHPCoinAddress legacy and modern keygen",
+      "kind": "bits",
+      "stages": [
+        "first-byte constraint",
+        "wallet-specific calls",
+        "key byte string"
+      ],
+      "svg_file": "inventory-svg/M192.svg",
+      "sha256": "5d050554a0326c651aca2b3487f6240430f2ee9a6010672a9dea53bb60b366db",
+      "legacy": true
+    },
+    {
+      "id": "M193",
+      "method": "V8 MWC1616 / Randstorm-era byte fill",
+      "kind": "coupled",
+      "stages": [
+        "two V8 states",
+        "multiply-with-carry",
+        "combined outputs"
+      ],
+      "svg_file": "inventory-svg/M193.svg",
+      "sha256": "1b4f594c6b274d5c24493fce18dd468981c7fc9a701b40d32701b24a435c0f63",
+      "legacy": true
+    },
+    {
+      "id": "M194",
+      "method": "V8 xorshift128 state recovery",
+      "kind": "leak",
+      "stages": [
+        "observed random outputs",
+        "xorshift constraints",
+        "compatible states"
+      ],
+      "svg_file": "inventory-svg/M194.svg",
+      "sha256": "662f0a3822835f2075caa5371f2fbc2602e196038ea215cf6f5ed40bf1b52902",
+      "legacy": true
+    },
+    {
+      "id": "M195",
+      "method": ".NET System.Random replay",
+      "kind": "prng",
+      "stages": [
+        "TickCount-style seed",
+        ".NET subtractive state",
+        "replayed outputs"
+      ],
+      "svg_file": "inventory-svg/M195.svg",
+      "sha256": "dee07a29316f0ec09f6b8c456a6e9cfb95ea8dc2cd3f76b26264a2b5896ae398",
+      "legacy": true
+    },
+    {
+      "id": "M196",
+      "method": "Timestamp/UUID hash-derived keys",
+      "kind": "clock",
+      "stages": [
+        "timestamp / UUID",
+        "encode and hash",
+        "full-width output"
+      ],
+      "svg_file": "inventory-svg/M196.svg",
+      "sha256": "42718a064fd7606abbfe737c4f89684acfef1ceccb3110b2da508ff16107ee59",
+      "legacy": true
+    },
+    {
+      "id": "M197",
+      "method": "Early-2009 clock-window seed replay",
+      "kind": "clock",
+      "stages": [
+        "bounded 2009 times",
+        "generator families",
+        "coinbase comparison"
+      ],
+      "svg_file": "inventory-svg/M197.svg",
+      "sha256": "71bd6badc7c04f1606916d1b584fe015f5110d98880a58def9d5cc63818738c0",
+      "legacy": true
+    },
+    {
+      "id": "M198",
+      "method": "Weak-entropy multi-family CUDA sweep",
+      "kind": "parallel",
+      "stages": [
+        "seed ranges",
+        "GPU PRNG / curve lanes",
+        "address-index checks"
+      ],
+      "svg_file": "inventory-svg/M198.svg",
+      "sha256": "20bd523c5ee403e9e624ff35e9b383fde5d4df515f43ac488a0c5461efc6fd1c",
+      "legacy": true
+    },
+    {
+      "id": "M199",
+      "method": "Bloom plus sorted funded-address index",
+      "kind": "bloom",
+      "stages": [
+        "candidate hash",
+        "Bloom rejection",
+        "exact sorted lookup"
+      ],
+      "svg_file": "inventory-svg/M199.svg",
+      "sha256": "ef1e33036489957da865f6c073af3a53e4373d114c9d475103482af8c5980b3d",
+      "legacy": true
+    },
+    {
+      "id": "M200",
+      "method": "Weak-RNG repository-source triage",
+      "kind": "archive",
+      "stages": [
+        "wallet repositories",
+        "RNG call sites",
+        "version / dataflow triage"
+      ],
+      "svg_file": "inventory-svg/M200.svg",
+      "sha256": "15f437b2c95dc8d065d16e13e8ee0fdecefd4c5903b505b1eeb80c8b43f8defe",
+      "legacy": true
+    },
+    {
+      "id": "M201",
+      "method": "Recoverable-hit rederivation/address-type audit",
+      "kind": "certificate",
+      "stages": [
+        "proposed scanner hit",
+        "rederive exact path",
+        "address-type audit"
+      ],
+      "svg_file": "inventory-svg/M201.svg",
+      "sha256": "aaceda18001c9f49acf4dd84632f66b0862a02c65d5161ea47a1c0d004a71690",
+      "legacy": true
+    },
+    {
+      "id": "M202",
+      "method": "Digital-root puzzle-index association",
+      "kind": "residue",
+      "stages": [
+        "scalar digits",
+        "reduce modulo nine",
+        "index association"
+      ],
+      "svg_file": "inventory-svg/M202.svg",
+      "sha256": "3b10d85229a9489fc7d951cff7e9d7e8686d9e927188fa740bf1b50556d7eb17",
+      "legacy": true
+    },
+    {
+      "id": "M203",
+      "method": "Public-key x-coordinate steganography",
+      "kind": "stego",
+      "stages": [
+        "private scalar bits",
+        "public x bits",
+        "XOR / low-bit relation"
+      ],
+      "svg_file": "inventory-svg/M203.svg",
+      "sha256": "da498072f35555516956144e84f9497d4a06f4e82f30d7a2321fbc2b9f61ae6c",
+      "legacy": true
+    },
+    {
+      "id": "M204",
+      "method": "Zeckendorf/Fibonacci sparsity",
+      "kind": "fibonacci",
+      "stages": [
+        "integer value",
+        "nonadjacent Fibonacci terms",
+        "sparse representation"
+      ],
+      "svg_file": "inventory-svg/M204.svg",
+      "sha256": "494bf5e319d485e9a0a46befe71e266516102ecaa1bb80a33f462e91b96ed6ed",
+      "legacy": true
+    },
+    {
+      "id": "M205",
+      "method": "Low-discrepancy / Halton-like tier placement",
+      "kind": "sample",
+      "stages": [
+        "normalized positions",
+        "Halton-like spacing",
+        "discrepancy control"
+      ],
+      "svg_file": "inventory-svg/M205.svg",
+      "sha256": "c015543fb8659036a7edbf0aaf37b0d93109c9f7128e687d459cacb796daed29",
+      "legacy": true
+    },
+    {
+      "id": "M206",
+      "method": "Benford leading digits of roots",
+      "kind": "benford",
+      "stages": [
+        "root leading digits",
+        "observed counts",
+        "Benford reference"
+      ],
+      "svg_file": "inventory-svg/M206.svg",
+      "sha256": "82acc02d47e68d9f9167b6c197e8bbda77971ad5cf2f85b7369eb12e959d68ac",
+      "legacy": true
+    },
+    {
+      "id": "M207",
+      "method": "Taxicab sums of two cubes",
+      "kind": "cubes",
+      "stages": [
+        "cube a",
+        "cube b",
+        "sum candidate"
+      ],
+      "svg_file": "inventory-svg/M207.svg",
+      "sha256": "5852e28fc4b55275ecdef8831421fd8d67566c4678f720b5606b1aea899decc9",
+      "legacy": true
+    },
+    {
+      "id": "M208",
+      "method": "Polynomial in puzzle number",
+      "kind": "regression",
+      "stages": [
+        "puzzle indices",
+        "polynomial fit",
+        "later scalar estimate"
+      ],
+      "svg_file": "inventory-svg/M208.svg",
+      "sha256": "b220c7640a86ce763cc579025af4a0dbfa3bcc590ce5a3e10e3d516a1ad05ea3",
+      "legacy": true
+    },
+    {
+      "id": "M209",
+      "method": "Consecutive bit-Jaccard similarity",
+      "kind": "venn",
+      "stages": [
+        "set bits of key A",
+        "intersection / union",
+        "set bits of key B"
+      ],
+      "svg_file": "inventory-svg/M209.svg",
+      "sha256": "b140b22cfd1983f8dc56559a51d26234f6c953f4f38236e62d14a98b8185d2fd",
+      "legacy": true
+    },
+    {
+      "id": "M210",
+      "method": "Mersenne-adjacent margin hypothesis",
+      "kind": "endpoints",
+      "stages": [
+        "power-of-two bounds",
+        "normalized edge margins",
+        "key position"
+      ],
+      "svg_file": "inventory-svg/M210.svg",
+      "sha256": "40fcd42cf01f5aa4f60eca08d45151f56e80c6bbe9ed41ef78dcae47a8b19d43",
+      "legacy": true
+    },
+    {
+      "id": "M211",
+      "method": "Shared CRT residue / digital modular biases",
+      "kind": "residue",
+      "stages": [
+        "small moduli",
+        "residue histograms",
+        "bias tests"
+      ],
+      "svg_file": "inventory-svg/M211.svg",
+      "sha256": "c618b0380a039dd60e4ba7f9e2fa5dcc5e8899950f67a96577e7555063c7ee89",
+      "legacy": true
+    },
+    {
+      "id": "M212",
+      "method": "Collatz stopping-time association",
+      "kind": "collatz",
+      "stages": [
+        "starting scalar",
+        "parity-dependent steps",
+        "stopping-time summary"
+      ],
+      "svg_file": "inventory-svg/M212.svg",
+      "sha256": "c33d7f87f1a1edecd317106782f8c81d10e00bf0d34fb6a64ba4a744a16ed578",
+      "legacy": true
+    },
+    {
+      "id": "M213",
+      "method": "Brainwallet/BIP39 phrase schedule",
+      "kind": "derive",
+      "stages": [
+        "phrase catalog",
+        "derive and mask",
+        "declared schedule"
+      ],
+      "svg_file": "inventory-svg/M213.svg",
+      "sha256": "37eda0668951fc229f4061de37958eb3a0940ff3a70139c4e1235a92623778f2",
+      "legacy": true
+    },
+    {
+      "id": "M214",
+      "method": "Solve-date scalar encoding",
+      "kind": "clock",
+      "stages": [
+        "solve-date numbers",
+        "encoding / fitting",
+        "scalar-position test"
+      ],
+      "svg_file": "inventory-svg/M214.svg",
+      "sha256": "3de837d6b4b9b725f8c15e7d252c8b83a032e59268054fbad2b6a96212c8bd9d",
+      "legacy": true
+    },
+    {
+      "id": "M215",
+      "method": "UniMath-inspired arithmetic identities",
+      "kind": "division",
+      "stages": [
+        "integer value",
+        "quotient and remainder",
+        "exact reconstruction"
+      ],
+      "svg_file": "inventory-svg/M215.svg",
+      "sha256": "2263d35e15d8d3d7bdbcb81b5d8f50527d60181fb9bddf4d755dd74a1a0a33ff",
+      "legacy": true
+    },
+    {
+      "id": "M216",
+      "method": "Residue/Legendre/coefficient distribution controls",
+      "kind": "null",
+      "stages": [
+        "observed residues",
+        "matched random samples",
+        "distribution control"
+      ],
+      "svg_file": "inventory-svg/M216.svg",
+      "sha256": "b8988a80f02c9517f7c60f37b90e1c925d4d615afe674c25aa735e88fb364764",
+      "legacy": true
+    },
+    {
+      "id": "M217",
+      "method": "DP hashing/birthday/URAND jump probes",
+      "kind": "collision",
+      "stages": [
+        "hashed walk states",
+        "birthday collisions",
+        "jump-table probes"
+      ],
+      "svg_file": "inventory-svg/M217.svg",
+      "sha256": "cf05ff80805cc1e4459ef88c44dee87834a2902bb5321a3cf1041635f0d340d8",
+      "legacy": true
+    },
+    {
+      "id": "M218",
+      "method": "Regression SVD/subset/interval arithmetic variants",
+      "kind": "regression",
+      "stages": [
+        "data subsets",
+        "SVD / interval rounding",
+        "forecast bounds"
+      ],
+      "svg_file": "inventory-svg/M218.svg",
+      "sha256": "957b5eaa46d4ce4d27ddbd1d1f835fb6499bb254f302a77a61e897d9165b7f9c",
+      "legacy": true
+    },
+    {
+      "id": "M219",
+      "method": "MOV and finite-field index-calculus applicability",
+      "kind": "gate",
+      "stages": [
+        "curve / field parameters",
+        "embedding-degree conditions",
+        "MOV applicability"
+      ],
+      "svg_file": "inventory-svg/M219.svg",
+      "sha256": "c72ccfc33455b421f58860fd52f8e11386c3691e9d370cc7598274ee19986e2e",
+      "legacy": true
+    },
+    {
+      "id": "M220",
+      "method": "DDL preprocessing tradeoff bounds",
+      "kind": "cost",
+      "stages": [
+        "preprocessing work",
+        "memory / online work",
+        "amortized tradeoff"
+      ],
+      "svg_file": "inventory-svg/M220.svg",
+      "sha256": "9bce7df583f316b731b96bc1618bfc826af2b9ea0f47d403f11666bfbeb05f8d",
+      "legacy": true
+    },
+    {
+      "id": "M221",
+      "method": "Finite modular difference triangles",
+      "kind": "triangle",
+      "stages": [
+        "finite residue row",
+        "neighbor subtraction",
+        "shrinking triangle"
+      ],
+      "svg_file": "inventory-svg/M221.svg",
+      "sha256": "cef7bdf950faa8e4af0d91381e5d92142b4bb0c52a9e79a5a9b2c1e70f46795e",
+      "legacy": true
+    },
+    {
+      "id": "M222",
+      "method": "Cyclic difference orbit classification",
+      "kind": "orbit",
+      "stages": [
+        "cyclic difference row",
+        "wraparound subtraction",
+        "finite-state cycle"
+      ],
+      "svg_file": "inventory-svg/M222.svg",
+      "sha256": "505b5cb94e9c09d816580a273c9470a7c3e5e9447f25dab39d30afb10be50b3c",
+      "legacy": true
+    },
+    {
+      "id": "M223",
+      "method": "Signed quotient hierarchy with common-factor removal",
+      "kind": "quotient",
+      "stages": [
+        "signed difference row",
+        "remove common powers",
+        "primitive next row"
+      ],
+      "svg_file": "inventory-svg/M223.svg",
+      "sha256": "7d61afcfa474303dbc92f218eef792e39eb3461c6557419146391806cb575c64",
+      "legacy": true
+    },
+    {
+      "id": "M224",
+      "method": "256-level quotient continuation",
+      "kind": "tower",
+      "stages": [
+        "starting rows",
+        "repeat quotient operator",
+        "256 levels"
+      ],
+      "svg_file": "inventory-svg/M224.svg",
+      "sha256": "a0aefaa17e6ec9f6c15dd076d1dfac8e40dbe2812af6711836acf1f0c193ab30",
+      "legacy": true
+    },
+    {
+      "id": "M225",
+      "method": "All-value magnitude/growth tracking",
+      "kind": "growth",
+      "stages": [
+        "all signed values",
+        "track every level",
+        "magnitude growth"
+      ],
+      "svg_file": "inventory-svg/M225.svg",
+      "sha256": "41abb7c9fc9d98c2e40d7cf84aff3c9b2fb86ee2804e9d0b31fda53a5a256a04",
+      "legacy": true
+    },
+    {
+      "id": "M226",
+      "method": "Inverse-difference kernel/anchor tests",
+      "kind": "inverse",
+      "stages": [
+        "shared difference row",
+        "many possible originals",
+        "anchor selects one"
+      ],
+      "svg_file": "inventory-svg/M226.svg",
+      "sha256": "262dcb326d8a4a96f4ba1a691a62f1c1429e32cc04e0e6a2bf6a9c8dba864217",
+      "legacy": true
+    },
+    {
+      "id": "M227",
+      "method": "Deterministic index, byte and bit evolution",
+      "kind": "bits",
+      "stages": [
+        "seed and index",
+        "byte / bit updates",
+        "deterministic evolution"
+      ],
+      "svg_file": "inventory-svg/M227.svg",
+      "sha256": "8f29ee5e82552415e17a6f31112de565af969b64de14c35cf43d307be5228464",
+      "legacy": true
+    },
+    {
+      "id": "M228",
+      "method": "Masking, rotation and coupled sequences",
+      "kind": "coupled",
+      "stages": [
+        "paired states",
+        "mask / rotation coupling",
+        "next paired states"
+      ],
+      "svg_file": "inventory-svg/M228.svg",
+      "sha256": "2901c31f891840416e5b898cd35dbe121aa8ee1cc8b388332136427d62db0d58",
+      "legacy": true
+    },
+    {
+      "id": "M229",
+      "method": "First/second-difference and drift schedulers",
+      "kind": "feedback",
+      "stages": [
+        "first / second differences",
+        "drift summaries",
+        "choose next operation"
+      ],
+      "svg_file": "inventory-svg/M229.svg",
+      "sha256": "3c25b1d799f02813f48ad3e3a8022035a29f7c04d21f5cdc5d8de07a3ef25ed5",
+      "legacy": true
+    },
+    {
+      "id": "M230",
+      "method": "Entropy, cycles, compression and spectral diagnostics",
+      "kind": "waves",
+      "stages": [
+        "bit trajectories",
+        "entropy / cycles / spectra",
+        "random controls"
+      ],
+      "svg_file": "inventory-svg/M230.svg",
+      "sha256": "caac64d508adbbab19043ad015596fbd2c1ba46dd24b9ae7cfe45e633f03311a",
+      "legacy": true
+    },
+    {
+      "id": "M231",
+      "method": "Four-dimensional key/public/address visualization",
+      "kind": "atlas",
+      "stages": [
+        "scalar",
+        "point / serialization",
+        "address coordinates"
+      ],
+      "svg_file": "inventory-svg/M231.svg",
+      "sha256": "cd4f03b692846e2edccbaf2c377af6da7ddf8d2750cef92941fa32e88ebbe731",
+      "legacy": true
+    },
+    {
+      "id": "M232",
+      "method": "Classical BSGS multiplicative-order finder",
+      "kind": "bsgs",
+      "stages": [
+        "small modular powers",
+        "matching table",
+        "large exponent steps"
+      ],
+      "svg_file": "inventory-svg/M232.svg",
+      "sha256": "d446ca7b4e50518e0e618a4a072af8dad030224d8dc531c7430f7b37eebf8123",
+      "legacy": true
+    },
+    {
+      "id": "M233",
+      "method": "Brent cycle-detection order finder",
+      "kind": "orbit",
+      "stages": [
+        "multiply modulo N",
+        "Brent checkpoints",
+        "return period"
+      ],
+      "svg_file": "inventory-svg/M233.svg",
+      "sha256": "46ae02bc0c30308df403b718d115cdc4cb5592f975b47960b62926255b29d743",
+      "legacy": true
+    },
+    {
+      "id": "M234",
+      "method": "Kangaroo multiplicative-order finder",
+      "kind": "collision",
+      "stages": [
+        "exponent walk A",
+        "matching modular value",
+        "exponent walk B"
+      ],
+      "svg_file": "inventory-svg/M234.svg",
+      "sha256": "cc3abe556cf6504abb45ac6161dc05e34aa47baf5326884b94f6fbfb21fbf68f",
+      "legacy": true
+    },
+    {
+      "id": "M235",
+      "method": "Pollard-rho factoring fast path",
+      "kind": "orbit",
+      "stages": [
+        "modular iterations",
+        "cycle-related pair",
+        "gcd factor test"
+      ],
+      "svg_file": "inventory-svg/M235.svg",
+      "sha256": "7c1311e7ba85bd020763484075b8b68d3075b2357b71faca651583dfdaf5ad17",
+      "legacy": true
+    },
+    {
+      "id": "M236",
+      "method": "Python/GMP/Rust controlled order benchmarks",
+      "kind": "benchmark",
+      "stages": [
+        "same modulus and base",
+        "Python / GMP / Rust",
+        "order and time checks"
+      ],
+      "svg_file": "inventory-svg/M236.svg",
+      "sha256": "5a36f9690ec1d53a50cf79169957f3ac9e0b366ea0a70d68ecb8977ae6d72e7d",
+      "legacy": true
+    },
+    {
+      "id": "M237",
+      "method": "Adaptive Shor simulation trial budgets",
+      "kind": "feedback",
+      "stages": [
+        "trial outcomes",
+        "estimate success rate",
+        "adapt repetition budget"
+      ],
+      "svg_file": "inventory-svg/M237.svg",
+      "sha256": "eb3fa7a0d699e3f0d5027ea67b346092f2a344e07f6800858bd3e8bed028d3ba",
+      "legacy": true
+    },
+    {
+      "id": "M238",
+      "method": "UCB/EWMA/early-stop method selection",
+      "kind": "feedback",
+      "stages": [
+        "backend reward streams",
+        "UCB / EWMA policy",
+        "explore or stop"
+      ],
+      "svg_file": "inventory-svg/M238.svg",
+      "sha256": "6b545ce773891818d7b0cc7f92919e03eecbbcdafcb146d79361e95553aea1ec",
+      "legacy": true
+    },
+    {
+      "id": "M239",
+      "method": "Semiprime-per-puzzle circuit/manifest analogy",
+      "kind": "circuit",
+      "stages": [
+        "puzzle-derived semiprime",
+        "order / gcd pipeline",
+        "resource analogy"
+      ],
+      "svg_file": "inventory-svg/M239.svg",
+      "sha256": "a0919244f667a8ebc661f312d3c94d52ad94ced4ac4e9dc6476243fc22eb6515",
+      "legacy": true
+    },
+    {
+      "id": "M240",
+      "method": "secp256k1 quantum ECDLP resource mode",
+      "kind": "gate",
+      "stages": [
+        "declared problem size",
+        "exact-small / model-large",
+        "modeled success"
+      ],
+      "svg_file": "inventory-svg/M240.svg",
+      "sha256": "49904ef7a491d495f8e78b98b08593ac4daccd72456cf2ecbe8bda9b98a82196",
+      "legacy": true
+    },
+    {
+      "id": "M241",
+      "method": "520-logical-qubit resource sensitivity model",
+      "kind": "resource",
+      "stages": [
+        "logical components",
+        "data + workspace + ancilla",
+        "assumption sensitivity"
+      ],
+      "svg_file": "inventory-svg/M241.svg",
+      "sha256": "85dc958d835ec7e86e8ae80dd82e70cf269b48dee21533d35e72535b32697d5f",
+      "legacy": true
+    },
+    {
+      "id": "M242",
+      "method": "Surface-code/platform timing estimates",
+      "kind": "resource",
+      "stages": [
+        "logical operations",
+        "code-distance overhead",
+        "physical time / qubits"
+      ],
+      "svg_file": "inventory-svg/M242.svg",
+      "sha256": "082f472450adfbfd6f42c5652f0c29aa2956c7f627d8c06423ac8a6546af0f4a",
+      "legacy": true
+    },
+    {
+      "id": "M243",
+      "method": "Wolfram/mask sensitivity extensions",
+      "kind": "sensitivity",
+      "stages": [
+        "baseline assumptions",
+        "change mask / parameters",
+        "compare estimates"
+      ],
+      "svg_file": "inventory-svg/M243.svg",
+      "sha256": "c895f8eb9018417a47286eefaf8e0fd743971b2f3372b744a5e3e88a19daaac8",
+      "legacy": true
+    },
+    {
+      "id": "M244",
+      "method": "Train/holdout adaptive-trial study",
+      "kind": "holdout",
+      "stages": [
+        "policy training stream",
+        "freeze trial budget",
+        "held-out streams"
+      ],
+      "svg_file": "inventory-svg/M244.svg",
+      "sha256": "34c429be01d2976d6768d176be3078ca4032206ca161ae069c0a5691607e29aa",
+      "legacy": true
+    }
+  ]
+}

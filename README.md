@@ -5,6 +5,7 @@ This repository publishes the 311-page explained edition of a historical evidenc
 - [Download the PDF](BITCOIN_RESEARCH_METHODS_EXPLAINED.pdf)
 - [Read the explained report](REPORT_EXPLAINED.md)
 - [Browse the mathematical formulations](METHOD_MATHEMATICS.md)
+- [Browse the method imagery](line-art-atlas/inventory-svg/)
 
 Author: Cory L. Thorbeck
 
@@ -28,3 +29,5 @@ CTheory is useful as a scalar-coordinate decomposition and search-planning frame
 | Search accounting | Total work must include every plausible branch, not only the cheapest leaf. |
 
 This status is intentionally separate from the historical method records below. Later corrections supersede earlier stronger claims.
+
+The `line-art-atlas/inventory-svg/` directory contains the individual SVG diagrams used by the method sheets. The diagrams are also embedded in the PDF.
